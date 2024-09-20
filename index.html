@@ -3,13 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Mi Cocina Proyecto</title>
   </head>
   <body>
     <header>
       <img src="./images/pngegg.png" alt="logo" height="50" />
-
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -22,23 +21,117 @@
       </nav>
     </header>
     <main>
-      <h1>Bienvenidos a MI COCINA</h1>
-      <h2>
-        Lugar donde encontraras desde recetas hasta opiniones de ingredientes
-      </h2>
+      <section class="principal">
+        <div class="bienvenida">
+          <h1>Bienvenidos a MI COCINA</h1>
+          <h2>
+            Lugar donde encontraras desde recetas hasta opiniones de
+            ingredientes
+          </h2>
+        </div>
+      </section>
+      <section class="top3">
+        <h1>LAS RECETAS MAS ELEGIDAS</h1>
+        <table>
+          <tr>
+            <td>
+              <img
+                class="imgSmall"
+                src="./images/Pasteleria 1 - Demo 3 - Torta Chocolatosa de arriba.JPG"
+                alt="Torta de Chocolate"
+              />
+            </td>
+            <td>
+              <img
+                class="imgSmall"
+                src="./images/Pasteleria 1 - Demo 4 - Choco Berries.JPG"
+                alt="Torta CHoco Berries"
+              />
+            </td>
+            <td>
+              <img
+                class="imgSmall"
+                src="./images/Pasteleria 1 - Demo 4 - Torta Tropical.JPG"
+                alt="Torta Tropical"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><a href="pages/recetas.html">Torta Chocolatosa</a></td>
+            <td><a href="pages/recetas.html">Torta Choco Berries</a></td>
+            <td><a href="pages/recetas.html">Torta Tropical</a></td>
+          </tr>
+        </table>
+      </section>
+      <section class="categorias">
+        <h1>Nuestras categorias de recetas</h1>
+        <table>
+          <tr>
+            <td>
+              <img
+                class="imgMedium"
+                src="./images/panaderia.jpg"
+                alt="Panaderia"
+              />
+            </td>
+            <td>
+              <img
+                class="imgMedium"
+                src="./images/pasteleria.webp"
+                alt="Pasteleria"
+              />
+            </td>
+            <td>
+              <img class="imgMedium" src="./images/tartas.png" alt="Tartas" />
+            </td>
+          </tr>
+          <tr>
+            <td><a href="pages/recetas.html">Panaderia</a></td>
+            <td><a href="pages/recetas.html">Pasteleria</a></td>
+            <td><a href="pages/recetas.html">Tartas</a></td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                class="imgMedium"
+                src="./images/decoracionTortas.jpg"
+                alt="Decoracion De Tortas"
+              />
+            </td>
+            <td>
+              <img
+                class="imgMedium"
+                src="./images/helados.jpg"
+                alt="Pasteleria"
+              />
+            </td>
+            <td>
+              <img class="imgMedium" src="./images/budines.jpg" alt="Tartas" />
+            </td>
+          </tr>
+          <tr>
+            <td><a href="pages/recetas.html">Decoracion de tortas</a></td>
+            <td><a href="pages/recetas.html">Helados</a></td>
+            <td><a href="pages/recetas.html">Budines</a></td>
+          </tr>
+        </table>
+      </section>
     </main>
-    <aside>
-      <p>Tene en cuenta las cualidades necesaria para la cocina</p>
-      <ul>
-        <li>Pasion</li>
-        <li>Creatividad</li>
-        <li>HAMBRE!!!!!!!</li>
-      </ul>
-    </aside>
 
-    
     <footer>
-      <h1>Gracias por visitar</h1>
+      <img class="logoRedes" src="./images/whatsapp.png" alt="whatsapp" />
+
+      <!-- Redes sociales -->
+      <div>
+        <h1>Seguinos en</h1>
+        <a href="https://www.facebook.com/">
+          <img src="./images/facebook.png" class="logoRedes" alt="" />
+        </a>
+
+        <a href="https://www.instagram.com/">
+          <img src="./images/instagram.png" class="logoRedes" alt="" />
+        </a>
+      </div>
     </footer>
   </body>
 </html>
