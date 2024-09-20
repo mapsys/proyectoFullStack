@@ -65,6 +65,13 @@ body {
   width: 50%;
   height: 50%;
 }
+.imgMediumCentered {
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .bienvenida {
   text-align: center;
   height: 100px;
@@ -78,6 +85,33 @@ body {
   font-size: 2rem;
 }
 
+.sectionRecetas h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #9e1313;
+}
+
+.recetas {
+  width: 40%;
+  height: 40%;
+  border-radius: 20px;
+}
+.imgRecetas {
+  width: 80%;
+  height: 80%;
+  border-radius: 20px;
+}
+
+.about {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.about ul {
+  list-style-type: none;
+  text-align: left;
+}
 /* Footer */
 footer {
   background-color: #cc681c;
