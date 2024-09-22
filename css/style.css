@@ -40,6 +40,9 @@ header img {
 }
 
 /* Body */
+h1 {
+  font-size: 4rem;
+}
 body {
   background-color: #f8eded;
 }
@@ -57,8 +60,9 @@ body {
   color: #9e1313;
 }
 .imgSmall {
-  width: 50%;
-  height: 50%;
+  width: 25%;
+  height: 25%;
+  margin: 20px;
 }
 
 .imgMedium {
@@ -111,6 +115,25 @@ body {
 .about ul {
   list-style-type: none;
   text-align: left;
+}
+
+.videosClass td {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.datos {
+  margin-top: 40px;
+}
+
+.datos label {
+  font-size: 3rem;
+  margin-right: 5px;
+}
+
+.datos form{
+    margin-bottom: 50px;
 }
 /* Footer */
 footer {
