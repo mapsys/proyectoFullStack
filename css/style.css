@@ -16,7 +16,7 @@ html {
 
 /* Header */
 header {
-  background-color: #cc681c;
+  background-color: #efab77;
   padding-left: 30px;
   font-size: medium;
 }
@@ -45,6 +45,14 @@ h1 {
 }
 body {
   background-color: #f8eded;
+}
+
+.separador{
+  border: 0.5px solid;
+  border-color: #9d7e50;
+  border-style: solid;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .top3 {
@@ -171,7 +179,7 @@ body {
 }
 /* Footer */
 footer {
-  background-color: #cc681c;
+  background-color: #efab77;
 }
 .logoRedes {
   width: 5%;
