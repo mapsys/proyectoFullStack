@@ -8,20 +8,24 @@
   </head>
   <body>
     <header>
-      <img src="./images/pngegg.png" alt="logo" height="50" />
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="pages/recetas.html">Recetas</a></li>
-          <li><a href="pages/about.html">Sobre Mi</a></li>
-          <li><a href="pages/fotos.html">Fotos</a></li>
-          <li><a href="pages/contacto.html">Contacto</a></li>
-          <li><a href="pages/wireframe.html">Wireframe</a></li>
-        </ul>
-      </nav>
+      <div class="header-container">
+        <div class="logo">
+          <img src="./images/pngegg.png" alt="logo" />
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/recetas.html">Recetas</a></li>
+            <li><a href="pages/about.html">Sobre Mi</a></li>
+            <li><a href="pages/fotos.html">Fotos</a></li>
+            <li><a href="pages/contacto.html">Contacto</a></li>
+            <li><a href="pages/wireframe.html">Wireframe</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <hr class="separador">
+      <hr class="separador" />
       <section class="principal">
         <div class="bienvenida">
           <h1>Bienvenidos a MI COCINA</h1>
@@ -104,13 +108,19 @@
               />
             </td>
             <td>
-              <p class="parrafoGrande">Gracias por visitar mi pagina. </p>
-              <p class="parrafoGrande">Aqui encontraras todas las recetas que puedas imaginar</p>
+              <p class="parrafoGrande">Gracias por visitar mi pagina.</p>
+              <p class="parrafoGrande">
+                Aqui encontraras todas las recetas que puedas imaginar
+              </p>
             </td>
           </tr>
           <tr>
             <td><a href="pages/recetas2.html">Pasteleria</a></td>
-            <td><a class="linkBoton" href="./pages/about.html">Conoce mas sobre MI</a></td>
+            <td>
+              <a class="linkBoton" href="./pages/about.html"
+                >Conoce mas sobre MI</a
+              >
+            </td>
           </tr>
           <tr>
             <td>
@@ -156,11 +166,13 @@
       </section>
     </main>
 
-    <footer>
-      <img class="logoRedes" src="./images/whatsapp.png" alt="whatsapp" />
-
+    <footer class="footer-container">
+      <div class="redes">
+        <h1>Comunicate con nosotros</h1>
+        <img src="./images/whatsapp.png" alt="whatsapp" />
+      </div>
       <!-- Redes sociales -->
-      <div>
+      <div class="redes">
         <h1>Seguinos en</h1>
         <a href="https://www.facebook.com/">
           <img src="./images/facebook.png" class="logoRedes" alt="" />
