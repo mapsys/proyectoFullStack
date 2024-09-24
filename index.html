@@ -7,8 +7,7 @@
     <title>Mi Cocina</title>
   </head>
   <body>
-    <header>
-      <div class="header-container">
+    <header class="header-container">
         <div class="logo">
           <img src="./images/pngegg.png" alt="logo" />
         </div>
@@ -22,148 +21,158 @@
             <li><a href="pages/wireframe.html">Wireframe</a></li>
           </ul>
         </nav>
-      </div>
     </header>
-    <main>
-      <hr class="separador" />
-      <section class="principal">
-        <div class="bienvenida">
-          <h1>Bienvenidos a MI COCINA</h1>
-          <h2>
-            Lugar donde encontraras desde recetas hasta opiniones de
-            ingredientes
-          </h2>
-        </div>
-      </section>
-      <section class="top3">
-        <h1>LAS RECETAS MAS ELEGIDAS</h1>
-        <table>
-          <tr>
-            <td>
-              <img
-                class="imgMedium"
-                src="./images/Pasteleria 1 - Demo 3 - Torta Chocolatosa de arriba.JPG"
-                alt="Torta de Chocolate"
-              />
-            </td>
-
-            <td>
-              <img
-                class="imgMedium"
-                src="./images/Pasteleria 1 - Demo 4 - Choco Berries.JPG"
-                alt="Torta CHoco Berries"
-              />
-            </td>
-            <td>
-              <img
-                class="imgMedium"
-                src="./images/Pasteleria 1 - Demo 4 - Torta Tropical.JPG"
-                alt="Torta Tropical"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="pages/recetas.html#tortaHumeda">Torta Chocolatosa</a>
-            </td>
-            <td>
-              <a href="pages/recetas.html#chocoBerries">Torta Choco Berries</a>
-            </td>
-            <td>
-              <a href="pages/recetas.html#tortaTropical">Torta Tropical</a>
-            </td>
-          </tr>
-        </table>
-      </section>
-      <section class="categorias">
-        <h1>Nuestras categorias de recetas</h1>
-        <table>
-          <tr>
-            <td>
-              <img
-                class="imgMedium"
-                src="./images/panaderia.jpg"
-                alt="Panaderia"
-              />
-            </td>
-            <td>
-              <img
-                class="imgMediumRounded"
-                src="./images//blank-profile.jpg"
-                alt="imagen del autor"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="pages/recetas2.html">Panaderia</a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img
-                class="imgMedium"
-                src="./images/pasteleria.webp"
-                alt="Pasteleria"
-              />
-            </td>
-            <td>
-              <p class="parrafoGrande">Gracias por visitar mi pagina.</p>
-              <p class="parrafoGrande">
-                Aqui encontraras todas las recetas que puedas imaginar
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td><a href="pages/recetas2.html">Pasteleria</a></td>
-            <td>
-              <a class="linkBoton" href="./pages/about.html"
-                >Conoce mas sobre MI</a
+    <main class="main-container">
+      <hr />
+      <!-- Top 3 recetas -->
+      <section class="top3-container">
+        <article class="top3-article">
+          <a href="./pages/recetas.html#tortaHumeda">
+            <img
+              src="./images/Pasteleria 1 - Demo 3 - Torta Chocolatosa de arriba.JPG"
+              alt=""
+            />
+          </a>
+          <div class="top3-title">
+            <h2>
+              <a href="./pages/recetas.html#tortaHumeda"
+                >TORTA HUMEDA DE CHOCOLATE</a
               >
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img class="imgMedium" src="./images/tartas.png" alt="Tartas" />
-            </td>
-          </tr>
-          <tr>
-            <td><a href="pages/recetas2.html">Tartas</a></td>
-          </tr>
-          <tr>
-            <td>
-              <img
-                class="imgMedium"
-                src="./images/decoracionTortas.jpg"
-                alt="Decoracion De Tortas"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><a href="pages/recetas2.html">Decoracion de tortas</a></td>
-          </tr>
-          <tr>
-            <td>
-              <img
-                class="imgMedium"
-                src="./images/helados.jpg"
-                alt="Pasteleria"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><a href="pages/recetas2.html">Helados</a></td>
-          </tr>
-          <tr>
-            <td>
-              <img class="imgMedium" src="./images/budines.jpg" alt="Tartas" />
-            </td>
-          </tr>
-          <tr>
-            <td><a href="pages/recetas2.html">Budines</a></td>
-          </tr>
-        </table>
+            </h2>
+          </div>
+        </article>
+        <article class="top3-article">
+          <a href="./pages/recetas.html#tortaTropical">
+            <img
+              src="./images/Pasteleria 1 - Demo 4 - Torta Tropical.JPG"
+              alt=""
+            />
+          </a>
+          <div class="top3-title">
+            <h2>
+              <a href="./pages/recetas.html#tortaTropical">TORTA TROPICAL</a>
+            </h2>
+          </div>
+        </article>
+        <article class="top3-article">
+          <a href="./pages/recetas.html#chocoBerries">
+            <img
+              src="./images/Pasteleria 1 - Demo 4 - Choco Berries.JPG"
+              alt=""
+            />
+          </a>
+          <div class="top3-title">
+            <h2>
+              <a href="./pages/recetas.html#chocoBerries">CHOCO BERRIES</a>
+            </h2>
+          </div>
+        </article>
       </section>
+
+      <!-- Main content -->
+      <div class="centerContent">
+        <section class="mainContent">
+          <article class="categorie-article">
+            <div class="imageArticle">
+              <a href="./pages/recetas2.html">
+                <img src="./images/pasteleria.jpg" alt="" />
+              </a>
+            </div>
+            <div class="descArticle">
+              <h1>Pasteleria</h1>
+              <p>
+                Aqui encontraras todas nuestras recetas de pastelerias. las de
+                los usuarios y las de los chefs pasteleros mas famosos
+              </p>
+            </div>
+          </article>
+          <article class="categorie-article">
+            <div class="imageArticle">
+              <a href="./pages/recetas2.html">
+                <img src="./images/panaderia.jpg" alt="" />
+              </a>
+            </div>
+            <div class="descArticle">
+              <h1>Panaderia</h1>
+              <p>
+                Aqui encontraras todas nuestras recetas de panaderias. las de
+                los usuarios y las de los chefs pasteleros mas famosos
+              </p>
+            </div>
+          </article>
+          <article class="categorie-article">
+            <div class="imageArticle">
+              <a href="./pages/recetas2.html">
+                <img src="./images/decoracionTortas.jpg" alt="" />
+              </a>
+            </div>
+            <div class="descArticle">
+              <h1>Decoracion de Tortas</h1>
+              <p>
+                Aqui encontraras todas nuestras tecnicas para decorar tus tortas
+                de una manera profesional como en las mejores pastelerias
+              </p>
+            </div>
+          </article>
+          <article class="categorie-article">
+            <div class="imageArticle">
+              <a href="./pages/recetas2.html">
+                <img src="./images/helados.jpg" alt="" />
+              </a>
+            </div>
+            <div class="descArticle">
+              <h1>Helados</h1>
+              <p>
+                Aqui encontraras todas nuestras recetas de helados asi como las
+                recomendaciones de los mejores heladeros para tener unos helados
+                cremosos y perfectos.
+              </p>
+            </div>
+          </article>
+          <article class="categorie-article">
+            <div class="imageArticle">
+              <a href="./pages/recetas2.html">
+                <img src="./images/tartas.jpg" alt="" />
+              </a>
+            </div>
+            <div class="descArticle">
+              <h1>Tartas</h1>
+              <p>
+                Aqui encontraras todas nuestras recetas de las mejores tartas
+                teniendo en cuentas las ultimas tendencias en decoracion y en
+                mini tartas
+              </p>
+            </div>
+          </article>
+          <article class="categorie-article">
+            <div class="imageArticle">
+              <a href="./pages/recetas2.html">
+                <img src="./images/budines.jpg" alt="" />
+              </a>
+            </div>
+            <div class="descArticle">
+              <h1>Budines</h1>
+              <p>
+                Aqui encontraras todas nuestras recetas de los mejores budines
+                tanto de estilo frances como norteamericano.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <aside class="sidebar">
+          <img src="./images/blank-profile.jpg" alt="" />
+          <div class="descripcion">
+            <p>
+              Gracias por visitar mi pagina. Soy un fanatico de la cocina que
+              tambien hizo una carrera en IT por lo que en esta pagina intentare
+              combinar mis dos pasiones
+            </p>
+          </div>
+        </aside>
+      </div>
+
+      <hr />
     </main>
 
     <footer class="footer-container">
