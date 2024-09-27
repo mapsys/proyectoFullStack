@@ -7,7 +7,8 @@
     <title>Mi Cocina</title>
   </head>
   <body>
-    <header class="header-container">
+    <div class="containerGrid">
+      <header class="header">
         <div class="logo">
           <img src="./images/pngegg.png" alt="logo" />
         </div>
@@ -21,56 +22,55 @@
             <li><a href="pages/wireframe.html">Wireframe</a></li>
           </ul>
         </nav>
-    </header>
-    <main class="main-container">
-      <hr />
-      <!-- Top 3 recetas -->
-      <section class="top3-container">
-        <article class="top3-article">
-          <a href="./pages/recetas.html#tortaHumeda">
-            <img
-              src="./images/Pasteleria 1 - Demo 3 - Torta Chocolatosa de arriba.JPG"
-              alt=""
-            />
-          </a>
-          <div class="top3-title">
-            <h2>
-              <a href="./pages/recetas.html#tortaHumeda"
-                >TORTA HUMEDA DE CHOCOLATE</a
-              >
-            </h2>
-          </div>
-        </article>
-        <article class="top3-article">
-          <a href="./pages/recetas.html#tortaTropical">
-            <img
-              src="./images/Pasteleria 1 - Demo 4 - Torta Tropical.JPG"
-              alt=""
-            />
-          </a>
-          <div class="top3-title">
-            <h2>
-              <a href="./pages/recetas.html#tortaTropical">TORTA TROPICAL</a>
-            </h2>
-          </div>
-        </article>
-        <article class="top3-article">
-          <a href="./pages/recetas.html#chocoBerries">
-            <img
-              src="./images/Pasteleria 1 - Demo 4 - Choco Berries.JPG"
-              alt=""
-            />
-          </a>
-          <div class="top3-title">
-            <h2>
-              <a href="./pages/recetas.html#chocoBerries">CHOCO BERRIES</a>
-            </h2>
-          </div>
-        </article>
-      </section>
+      </header>
+      <main class="main">
+        <hr />
+        <!-- Top 3 recetas -->
+        <section class="top3-container">
+          <article class="top3-article">
+            <a href="./pages/recetas.html#tortaHumeda">
+              <img
+                src="./images/Pasteleria 1 - Demo 3 - Torta Chocolatosa de arriba.JPG"
+                alt=""
+              />
+            </a>
+            <div class="top3-title">
+              <h2>
+                <a href="./pages/recetas.html#tortaHumeda"
+                  >TORTA HUMEDA DE CHOCOLATE</a
+                >
+              </h2>
+            </div>
+          </article>
+          <article class="top3-article">
+            <a href="./pages/recetas.html#tortaTropical">
+              <img
+                src="./images/Pasteleria 1 - Demo 4 - Torta Tropical.JPG"
+                alt=""
+              />
+            </a>
+            <div class="top3-title">
+              <h2>
+                <a href="./pages/recetas.html#tortaTropical">TORTA TROPICAL</a>
+              </h2>
+            </div>
+          </article>
+          <article class="top3-article">
+            <a href="./pages/recetas.html#chocoBerries">
+              <img
+                src="./images/Pasteleria 1 - Demo 4 - Choco Berries.JPG"
+                alt=""
+              />
+            </a>
+            <div class="top3-title">
+              <h2>
+                <a href="./pages/recetas.html#chocoBerries">CHOCO BERRIES</a>
+              </h2>
+            </div>
+          </article>
+        </section>
 
-      <!-- Main content -->
-      <div class="centerContent">
+        <!-- Main content -->
         <section class="mainContent">
           <article class="categorie-article">
             <div class="imageArticle">
@@ -159,7 +159,6 @@
             </div>
           </article>
         </section>
-
         <aside class="sidebar">
           <img src="./images/blank-profile.jpg" alt="" />
           <div class="descripcion">
@@ -170,27 +169,26 @@
             </p>
           </div>
         </aside>
-      </div>
+        <hr />
+      </main>
 
-      <hr />
-    </main>
+      <footer class="footer">
+        <div class="telefono">
+          <h1>Comunicate con nosotros</h1>
+          <img src="./images/whatsapp.png" alt="whatsapp" />
+        </div>
+        <!-- Redes sociales -->
+        <div class="redes">
+          <h1>Seguinos en</h1>
+          <a href="https://www.facebook.com/">
+            <img src="./images/facebook.png" class="logoRedes" alt="" />
+          </a>
 
-    <footer class="footer-container">
-      <div class="redes">
-        <h1>Comunicate con nosotros</h1>
-        <img src="./images/whatsapp.png" alt="whatsapp" />
-      </div>
-      <!-- Redes sociales -->
-      <div class="redes">
-        <h1>Seguinos en</h1>
-        <a href="https://www.facebook.com/">
-          <img src="./images/facebook.png" class="logoRedes" alt="" />
-        </a>
-
-        <a href="https://www.instagram.com/">
-          <img src="./images/instagram.png" class="logoRedes" alt="" />
-        </a>
-      </div>
-    </footer>
+          <a href="https://www.instagram.com/">
+            <img src="./images/instagram.png" class="logoRedes" alt="" />
+          </a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
