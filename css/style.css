@@ -90,6 +90,7 @@ hr {
   border-style: solid;
   width: 100%;
   margin: 0 auto;
+  grid-column: 1 / -1; 
 }
 
 .top3-container {
