@@ -7,66 +7,83 @@
     <title>Mi Cocina</title>
   </head>
   <body>
-    <header class="header-container">
-      <div class="logo">
-        <img src="../images/pngegg.png" alt="logo" />
-      </div>
-      <nav class="navbar">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../pages/recetas.html">Recetas</a></li>
-          <li><a href="../pages/about.html">Sobre Mi</a></li>
-          <li><a href="../pages/fotos.html">Fotos</a></li>
-          <li><a href="../pages/contacto.html">Contacto</a></li>
-          <li><a href="../pages/wireframe.html">Wireframe</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
+    <div class="containerGridSimple">
+      <header class="header">
+        <div class="logo">
+          <img src="../images/pngegg.png" alt="logo" />
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/recetas.html">Recetas</a></li>
+            <li><a href="../pages/about.html">Sobre Mi</a></li>
+            <li><a href="../pages/fotos.html">Fotos</a></li>
+            <li><a href="../pages/contacto.html">Contacto</a></li>
+            <li><a href="../pages/wireframe.html">Wireframe</a></li>
+          </ul>
+        </nav>
+      </header>
       <section class="bienvenida">
         <h1>Estas en la pagina queremos tus datos</h1>
       </section>
 
-      <section class="datos">
-        <form action="bienvenido.html" id="bienvenido" method="get">
-          <div>
-            <label for="name">Nombre</label
-            ><input type="text" name="name" id="name" />
-          </div>
-          <div>
-          <label for="apellido">Apellido</label
-          ><input type="text" name="apellido" id="apellido" />
-        </div>
-        <div>
-          <label for="email">Email</label
-          ><input type="email" name="email" id="email" />
-        </div>
-        <div>
-          <label for="especialidad">Especialidad</label
-          ><input type="text" name="especialidad" id="especialidad" />
-        </div>
-        <div>
-          <input type="submit" value="Enviar" />
-        </div>
+      <section class="mainContent contact">
+        <form
+          class="form-datos"
+          action="bienvenido.html"
+          id="bienvenido"
+          method="get"
+        >
+          <input
+            class="inputs"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Escribe tu nombre"
+          />
+          <input
+            class="inputs"
+            type="text"
+            name="apellido"
+            id="apellido"
+            placeholder="Escribe tu apellido"
+          />
+          <input
+            class="inputs"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Escribe tu email"
+          />
+          <input
+            class="inputs"
+            type="text"
+            name="especialidad"
+            id="especialidad"
+            placeholder="Escribe tu especialidad"
+          />
+          <p>Estoy de acuerdo con <a href="">Terminos y condiciones</a></p>
+          <input class="botons" ype="submit" value="Enviar" />
+          <p><a href="../index.html">Ya tengo cuenta</a></p>
         </form>
       </section>
-    </main>
-    <footer class="footer-container">
-      <div class="redes">
-        <h1>Comunicate con nosotros</h1>
-        <img src="../images/whatsapp.png" alt="whatsapp" />
-      </div>
-      <!-- Redes sociales -->
-      <div class="redes">
-        <h1>Seguinos en</h1>
-        <a href="https://www.facebook.com/">
-          <img src="../images/facebook.png" class="logoRedes" alt="" />
-        </a>
+      <footer class="footer">
+        <div class="redes">
+          <h1>Comunicate con nosotros</h1>
+          <img src="../images/whatsapp.png" alt="whatsapp" />
+        </div>
+        <!-- Redes sociales -->
+        <div class="redes">
+          <h1>Seguinos en</h1>
+          <a href="https://www.facebook.com/">
+            <img src="../images/facebook.png" class="logoRedes" alt="" />
+          </a>
 
-        <a href="https://www.instagram.com/">
-          <img src="../images/instagram.png" class="logoRedes" alt="" />
-        </a>
-      </div>
-    </footer>
+          <a href="https://www.instagram.com/">
+            <img src="../images/instagram.png" class="logoRedes" alt="" />
+          </a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

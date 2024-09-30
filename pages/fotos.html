@@ -7,7 +7,8 @@
     <title>Mi Cocina</title>
   </head>
   <body>
-    <header class="header-container">
+    <div class="containerGrid">
+    <header class="header">
       <div class="logo">
         <img src="../images/pngegg.png" alt="logo" />
       </div>
@@ -22,7 +23,6 @@
         </ul>
       </nav>
   </header>
-    <main>
       <section class="bienvenida">
         <h1>
           Aqui podras ver algunas <a href="#imagenes">imagenes</a> mias y las
@@ -33,6 +33,7 @@
           favoritos
         </h2>
       </section>
+<div class="mainContent">
       <section class="fotos" id="imagenes">
         <table>
           <tr>
@@ -108,8 +109,20 @@
           </tr>
         </table>
       </section>
-    </main>
-    <footer class="footer-container">
+    </div>
+            <!-- Sidebar -->
+            <aside class="sidebar">
+              <img src="../images/blank-profile.jpg" alt="" />
+              <div class="descripcion">
+                <p>
+                  Gracias por visitar mi pagina. Soy un fanatico de la cocina que
+                  tambien hizo una carrera en IT por lo que en esta pagina intentare
+                  combinar mis dos pasiones
+                </p>
+              </div>
+            </aside>
+    
+    <footer class="footer">
       <div class="redes">
         <h1>Comunicate con nosotros</h1>
         <img src="../images/whatsapp.png" alt="whatsapp" />
@@ -126,5 +139,6 @@
         </a>
       </div>
     </footer>
+  </div>
   </body>
 </html>
