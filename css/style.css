@@ -1,9 +1,3 @@
-/* Colores a usar en mi pagina
-#F8EDED Clarito para fondos
-#FF8225 Naranja para resaltados
-#B43F3F Bordo
-#173B45 negrito*/
-/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -18,47 +12,18 @@ body {
   overflow-x: hidden;
 }
 
-/* Contenedor principal */
-.containerGrid {
-  display: grid;
-  grid-template-areas:
-    "header header header"
-    "inicio inicio inicio"
-    "centerContent  centerContent sidebar"
-    "footer footer footer";
-  gap: 20px;
-  width: 80%;
-  margin: 0 auto;
-  max-width: 100%;
-}
-
-/* Contenedor Grid simple */
-.containerGridSimple {
-  display: grid;
-  grid-template-areas:
-    "header "
-    "inicio "
-    "centerContent"
-    "footer";
-  gap: 20px;
-  width: 80%;
-  margin: 0 auto;
-  max-width: 100%;
-}
-
 /* Header */
 
 .header {
-  grid-area: header;
   display: flex;
-  flex-direction: row;
   padding: 20px;
   background-color: #efab77;
-  padding: 11px 37px;
+  padding: 11px 10px;
   font-size: medium;
-  width: auto;
-  margin: 0;
+  width: 80%;
+  margin: auto;
   border-radius: 5px;
+  justify-content: space-between;
 }
 
 .logo {
@@ -68,52 +33,56 @@ body {
 .logo img {
   height: 70px;
 }
+
 .navbar {
-  display: flex;
-  justify-content: end;
-  text-align: right;
-  width: 70%;
+  background-color: #efab77 !important;
 }
 
-.navbar ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.nav-item a:hover {
+  color: #d67c15 !important;
 }
 
-.navbar li {
-  margin-top: 50px;
-  margin-right: 5px;
-}
+/* Main context */
 
-.navbar a {
-  color: rgb(247, 24, 24);
-  text-decoration: none;
-  font-size: 1.6rem;
-}
-
-/* Main */
-
-/* .separador {
-  grid-area: separador;
-  border: 0.5px solid;
-  border-color: #060505;
-  border-style: solid;
-  width: 100%;
+.gridTopMainSide {
+  display: grid;
+  grid-template-areas:
+    "top3 top3 top3 top3"
+    "main main main sidebar";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 80%;
   margin: 0 auto;
-  grid-column: 1 / -1; 
-} */
+  gap: 5px;
+}
 
+/* TOP3 */
 .top3-container {
-  grid-area: inicio;
+  grid-area: top3;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+
+.top3-header {
+  grid-area: top3;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.top3-header h2,
+.top3-header h3 {
+  margin: 0;
+  padding: 10px 0;
+}
+.top3-articles {
   display: flex;
   flex-direction: row;
-  margin: 10 auto;
-  padding: 11px 37px;
   justify-content: space-between;
-  background-color: #eee;
-  border-radius: 20px;
+  align-items: flex-start;
+  width: 100%;
 }
 .top3-article {
   display: flex;
@@ -122,150 +91,135 @@ body {
   width: 30%;
   text-align: center;
   flex-direction: column;
+  position: relative;
 }
-
 .top3-article img {
   width: 100%;
   height: auto;
+  display: block;
+  border-radius: 15px;
 }
 
 .top3-title {
-  margin-top: 10px;
-  display: block;
-}
-
-.mainContent {
-  grid-area: centerContent;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #b4aaaa;
-  border-radius: 10px;
-}
-
-.categorie-article {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  margin: 0 auto;
-  margin: 10px;
-}
-.imageArticle {
-  width: 70%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.categorie-article img {
-  width: 80%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-.descArticle {
-  width: 30%;
-  margin: 20px;
-  font-size: 1.5em;
-}
-.mainContentRecipes {
-  grid-area: centerContent;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  background-color: #f8f1f1;
-  border-radius: 10px;
-}
-
-.recipe-article {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  max-width: 200px; /* Limita el ancho máximo de las celdas */
-  height: 200px; /* Limita la altura máxima de las celdas */
-  overflow: hidden;
-}
-.imageRecipe {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.imageRecipe img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.descRecipe {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute; /* Esto coloca el texto encima de la imagen */
+  bottom: 10px; /* Ajusta la posición para que quede donde quieras */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Fondo semi-transparente para mejor legibilidad */
   color: white;
   padding: 10px;
-  font-size: 1.5rem;
-  width: 100%;
-}
-.descRecipe  a{
-  color: white;
-  text-decoration: none;
-}
-.bienvenida {
-  grid-area: inicio;
+  border-radius: 5px;
+  width: 80%;
   text-align: center;
-  height: 100px;
+}
+
+.top3-title a {
+  text-decoration: none;
+  color: #f6ebeb;
   font-size: 2rem;
-  background-color: #cdc0c0;
-  margin-top: 10px;
-  border-radius: 10px;
 }
-
-.sectionRecetas {
-  grid-area: centerContent;
-}
-
-.mainContent ul {
-  list-style: none;
-  padding: 0;
+.top3PageHeader h2,
+.top3PageHeader h3 {
   margin: 0;
-  font-size: 2em;
+  padding: 10px 0;
 }
 
-.form-datos {
+/* Main content */
+
+.mainContent {
+  grid-area: main;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-  background-color: rgb(59, 68, 172);
-  width: 50%;
-  padding: 20px 10px;
-  border-radius: 20px;
 }
 
-.inputs,
-.botons {
-  width: 75%;
+
+
+/* top3 Page */
+.gridTop3Page {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "main main sidebar";
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  margin: 10px auto;
+  gap: 5px;
 }
 
-.form-datos p,
-.form-datos a {
-  color: #f8f1f1;
-}
-.contact {
-  background-color: #eee;
-}
-
-.wireframe {
+.top3MPageMainContent{
+  grid-area: main;
   width: 100%;
-  height: auto;
+  display: flex;
+
+}
+.top3PageHeader {
+  grid-area: header;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.top3Recipe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+}
+.top3Recipe img{
+  width: 80%;
+}
+
+.top3Recipe p{
+  width: 80%;
+  font-size: 1.5rem;
+}
+
+.top3Recipe h3{
+  width: 80%;
+  font-size: 3rem;
+  color: #d67c15;
+}
+
+.top3Recipe ul{
+  width: 80%;
+}
+.top3PagePreparacion{
+  display: flex;
+  justify-content:flex-start;
+  align-items:self-start;
+  width: 100%;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+  width: 80%;
+}
+.top3PagePreparacion ul, .top3PagePreparacion ol{
+  width: 80%;
+  font-size: 1.5rem;
+  list-style-type: none;
+  text-align: left;
+}
+
+.top3PageRecipeVideo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+}
+.top3PageRecipeVideo iframe{
+  width: 80%;
 }
 /* Sidebar */
 .sidebar {
@@ -285,23 +239,11 @@ body {
   margin: 20px;
 }
 
-.descripcion {
-  margin: 20px;
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.descripcion p {
-  text-align: center;
-  font-size: 1.5em;
-  width: 80%;
-}
 /* Footer */
 .footer {
   grid-area: footer;
-  padding: 20px;
+  padding: 11px 10px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -310,6 +252,7 @@ body {
   padding-left: 30px;
   font-size: medium;
   border-radius: 5px;
+  width: 80%;
 }
 .footer img {
   width: 40px;
@@ -320,38 +263,4 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-}
-
-@media screen and (max-width: 430px) {
-  .containerGrid {
-    display: grid;
-    grid-template-areas:
-      "header"
-      "inicio"
-      "centerContent"
-      "sidebar"
-      "footer";
-    gap: 20px;
-    width: 100%;
-    margin: 0;
-  }
-  
-  /* Contenedor Grid simple */
-  .containerGridSimple {
-    display: grid;
-    grid-template-areas:
-      "header"
-      "inicio"
-      "centerContent"
-      "footer";
-    gap: 20px;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-.header{
-  flex-direction: column;
-  align-items: center;
-}
-
 }
