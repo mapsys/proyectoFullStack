@@ -14,6 +14,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* Contenedor principal */
 .containerGrid {
   display: grid;
@@ -25,6 +29,7 @@ html {
   gap: 20px;
   width: 80%;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 /* Contenedor Grid simple */
@@ -38,6 +43,7 @@ html {
   gap: 20px;
   width: 80%;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 /* Header */
@@ -208,6 +214,10 @@ html {
   font-size: 1.5rem;
   width: 100%;
 }
+.descRecipe  a{
+  color: white;
+  text-decoration: none;
+}
 .bienvenida {
   grid-area: inicio;
   text-align: center;
@@ -310,4 +320,38 @@ html {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 430px) {
+  .containerGrid {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "inicio"
+      "centerContent"
+      "sidebar"
+      "footer";
+    gap: 20px;
+    width: 100%;
+    margin: 0;
+  }
+  
+  /* Contenedor Grid simple */
+  .containerGridSimple {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "inicio"
+      "centerContent"
+      "footer";
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+.header{
+  flex-direction: column;
+  align-items: center;
+}
+
 }
