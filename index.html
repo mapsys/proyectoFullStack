@@ -9,6 +9,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Mi Cocina</title>
   </head>
@@ -125,89 +129,57 @@
 
       <!-- Main content -->
       <section class="mainContent">
+        <h2>Ultimas recetas</h2>
+        <h3>
+          Aqui encontraras las ultimas adciones a nuestro catalogo de recetas
+        </h3>
         <article class="categorie-article">
           <div class="imageArticle">
-            <a href="./pages/recetas2.html">
-              <img src="./images/pasteleria.jpg" alt="" />
+            <a href="./pages/recetas.html">
+              <img src="./images/Oatmeal-Cookies-Feature-720x991.jpg" alt="" />
             </a>
           </div>
           <div class="descArticle">
-            <h1>Pasteleria</h1>
+            <h1>Galletitas de Avena y pasas</h1>
             <p>
-              Aqui encontraras todas nuestras recetas de pastelerias. las de los
-              usuarios y las de los chefs pasteleros mas famosos
+              Las galletas de avena suaves y masticables son las galletas
+              clásicas por excelencia. Hechas con productos básicos simples de
+              la despensa, estas galletas icónicas son deliciosas, versátiles y
+              muy fáciles de hacer.
             </p>
           </div>
         </article>
         <article class="categorie-article">
           <div class="imageArticle">
-            <a href="./pages/recetas2.html">
-              <img src="./images/panaderia.jpg" alt="" />
+            <a href="./pages/recetas.html">
+              <img src="./images/oreo-cheesecake-feature-720x991.jpg" alt="" />
             </a>
           </div>
           <div class="descArticle">
-            <h1>Panaderia</h1>
+            <h1>Cheesecake de Oreo</h1>
             <p>
-              Aqui encontraras todas nuestras recetas de panaderias. las de los
-              usuarios y las de los chefs pasteleros mas famosos
+              Esta deliciosa receta de tarta de queso Oreo es el máximo placer,
+              ya que combina la rica cremosidad de la tarta de queso y el
+              irresistible sabor de las galletas Oreo. Ya sea para celebrar una
+              ocasión especial o satisfacer tu gusto por lo dulce, ¡este postre
+              perfecto se robará la atención!
             </p>
           </div>
         </article>
         <article class="categorie-article">
           <div class="imageArticle">
-            <a href="./pages/recetas2.html">
-              <img src="./images/decoracionTortas.jpg" alt="" />
+            <a href="./pages/recetas.html">
+              <img src="./images/Apple-Pie-Recipe-Feature-720x991.jpg" alt="" />
             </a>
           </div>
           <div class="descArticle">
-            <h1>Decoracion de Tortas</h1>
+            <h1>Tarta de Manzanas</h1>
             <p>
-              Aqui encontraras todas nuestras tecnicas para decorar tus tortas
-              de una manera profesional como en las mejores pastelerias
-            </p>
-          </div>
-        </article>
-        <article class="categorie-article">
-          <div class="imageArticle">
-            <a href="./pages/recetas2.html">
-              <img src="./images/helados.jpg" alt="" />
-            </a>
-          </div>
-          <div class="descArticle">
-            <h1>Helados</h1>
-            <p>
-              Aqui encontraras todas nuestras recetas de helados asi como las
-              recomendaciones de los mejores heladeros para tener unos helados
-              cremosos y perfectos.
-            </p>
-          </div>
-        </article>
-        <article class="categorie-article">
-          <div class="imageArticle">
-            <a href="./pages/recetas2.html">
-              <img src="./images/tartas.jpg" alt="" />
-            </a>
-          </div>
-          <div class="descArticle">
-            <h1>Tartas</h1>
-            <p>
-              Aqui encontraras todas nuestras recetas de las mejores tartas
-              teniendo en cuentas las ultimas tendencias en decoracion y en mini
-              tartas
-            </p>
-          </div>
-        </article>
-        <article class="categorie-article">
-          <div class="imageArticle">
-            <a href="./pages/recetas2.html">
-              <img src="./images/budines.jpg" alt="" />
-            </a>
-          </div>
-          <div class="descArticle">
-            <h1>Budines</h1>
-            <p>
-              Aqui encontraras todas nuestras recetas de los mejores budines
-              tanto de estilo frances como norteamericano.
+              Pocos postres dicen “caer en cada bocado” como esta receta de
+              tarta de manzana. ¡La combinación perfecta de sabor agrio y dulce
+              de una gran cantidad de manzanas frescas, esta sencilla tarta de
+              manzana es un postre clásico para completar cualquier plato
+              navideño!
             </p>
           </div>
         </article>
@@ -215,13 +187,54 @@
 
       <!-- Sidebar -->
       <aside class="sidebar">
-        <img src="./images/blank-profile.jpg" alt="" />
-        <div class="descripcion">
-          <p>
-            Gracias por visitar mi pagina. Soy un fanatico de la cocina que
-            tambien hizo una carrera en IT por lo que en esta pagina intentare
-            combinar mis dos pasiones
-          </p>
+        <div class="sidebarAbout">
+          <img src="./images/SobreMi.png" alt="" />
+          <div class="sidebarDescripcion">
+            <p>
+              Gracias por visitar mi pagina. Soy un fanatico de la cocina que
+              tambien hizo una carrera en IT por lo que en esta pagina intentare
+              combinar mis dos pasiones
+            </p>
+          </div>
+          <a href="./pages/about.html" class="btn btn-outline-success btn-lg"
+            >Mas Sobre mi</a
+          >
+        </div>
+        <div class="sidebarSociales">
+          <h3>Seguinos</h3>
+          <div class="sidebarSocialesIconos">
+            <a href="https://www.instagram.com" target="_blank"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="bi bi-twitter"></i
+            ></a>
+            <a href="https://www.youtube.com" target="_blank"
+              ><i class="bi bi-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div class="sidebarNewsletter">
+          <h2>Suscríbete a nuestro Newsletter</h2>
+          <p>Recibe las últimas novedades y recetas en tu mail.</p>
+          <form class="sidebarNewsletter-form" action="" method="POST">
+            <input
+              type="email"
+              name="email"
+              placeholder="Introduce tu correo electrónico"
+              required
+            />
+            <br />
+            <button class="btn btn-success" type="submit">Suscribirse</button>
+          </form>
+        </div>
+        <div class="sidebarBook">
+          <h2>Adquiri nuestro libro</h2>
+          <img src="./images/libro.webp" alt="" />
+          <p>Una compilacion de todas las recetas pasadas, presentes y faltantes</p>
         </div>
       </aside>
     </div>
