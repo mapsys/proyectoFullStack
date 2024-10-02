@@ -138,8 +138,6 @@ body {
   flex-direction: column;
 }
 
-
-
 /* top3 Page */
 .gridTop3Page {
   display: grid;
@@ -152,11 +150,18 @@ body {
   gap: 5px;
 }
 
-.top3MPageMainContent{
+.top3MPageMainContent {
   grid-area: main;
   width: 100%;
   display: flex;
-
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+.top3MPageMainContent hr {
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid black;
 }
 .top3PageHeader {
   grid-area: header;
@@ -174,42 +179,46 @@ body {
   flex-direction: column;
   position: relative;
 }
-.top3Recipe img{
+.top3Recipe img {
   width: 80%;
 }
 
-.top3Recipe p{
+.top3Recipe p {
   width: 80%;
   font-size: 1.5rem;
 }
 
-.top3Recipe h3{
+.top3Recipe h3 {
   width: 80%;
   font-size: 3rem;
   color: #d67c15;
 }
 
-.top3Recipe ul{
+.top3Recipe ul {
   width: 80%;
 }
-.top3PagePreparacion{
+.top3PagePreparacion {
   display: flex;
-  justify-content:flex-start;
-  align-items:self-start;
+  justify-content: flex-start;
+  align-items: self-start;
   width: 100%;
   text-align: center;
   flex-direction: column;
   position: relative;
   width: 80%;
 }
-.top3PagePreparacion ul, .top3PagePreparacion ol{
+.top3PagePreparacion ul {
   width: 80%;
   font-size: 1.5rem;
   list-style-type: none;
   text-align: left;
 }
-
-.top3PageRecipeVideo{
+.top3PagePreparacion ol {
+  width: 80%;
+  font-size: 1.5rem;
+  text-align: left;
+}
+.top3PageRecipeVideo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,8 +227,72 @@ body {
   flex-direction: column;
   position: relative;
 }
-.top3PageRecipeVideo iframe{
+.top3PageRecipeVideo iframe {
   width: 80%;
+}
+
+/* top3 Sidebar */
+.top3PageSidebar {
+  grid-area: sidebar;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(244, 227, 205);
+  border-radius: 10px;
+  width: 100%;
+  height: 10.5%;
+  position: sticky;
+  top: 10px;
+}
+.top3PageSidebar img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.top3SidebarArticle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+}
+.top3SidebarArticle img {
+  width: 50%;
+  height: auto;
+  margin: 5px auto;
+}
+.top3SidebarArticle a {
+  text-decoration: none;
+  color: black;
+}
+
+.top3PageTitle {
+  position: absolute; /* Esto coloca el texto encima de la imagen */
+  bottom: 10px; /* Ajusta la posición para que quede donde quieras */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Fondo semi-transparente para mejor legibilidad */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 50%;
+  text-align: center;
+}
+
+.top3PageTitle a {
+  text-decoration: none;
+  color: #f6ebeb;
+  font-size: 2rem;
 }
 /* Sidebar */
 .sidebar {
