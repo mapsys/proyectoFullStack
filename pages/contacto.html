@@ -76,61 +76,48 @@
     <section class="contactMainContent">
       <div class="contactosForm">
         <h1>Dejanos un mensaje</h1>
-        <form
-          class="form-datos"
-          action="bienvenido.html"
-          id="bienvenido"
-          method="get"
-        >
+        <form class="form-datos" action="bienvenido.html" id="bienvenido" method="get">
           <div class="input-group mb-3">
-            <span class="input-group-text" id="name">Nombre</span>
             <input
               type="text"
-              class="form-control"
+              class="form-control form-input"
               placeholder="Nombre"
               aria-label="Nombre"
               aria-describedby="name"
             />
           </div>
           <div class="input-group mb-3">
-            <span class="input-group-text" id="apellido">Apellido</span>
             <input
               type="text"
-              class="form-control"
+              class="form-control form-input"
               placeholder="Apellido"
               aria-label="Apellido"
               aria-describedby="apellido"
             />
           </div>
           <div class="input-group mb-3">
-            <span class="input-group-text" id="email">Email</span>
             <input
               type="email"
-              class="form-control"
-              placeholder="example@fomain.com"
+              class="form-control form-input"
+              placeholder="Email"
               aria-label="email"
               aria-describedby="email"
             />
           </div>
           <div class="input-group">
-            <span class="input-group-text">Dejanos tu mensaje</span>
             <textarea
-              class="form-control"
+              class="form-control form-input"
+              placeholder="Dejanos tu mensaje"
               aria-label="With textarea"
             ></textarea>
           </div>
-
           <div class="mb-3 form-check">
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="exampleCheck1"
-            />
+            <input type="checkbox" class="form-check-input-lg" id="exampleCheck1" />
             <label class="form-check-label" for="exampleCheck1"
               >Quiero recibir novedades</label
             >
           </div>
-          <button type="submit" class="btn btn-success btn-lg">Enviar</button>
+          <button type="submit" class="btn btn-enviar btn-lg">Enviar</button>
         </form>
       </div>
       <!-- Sidebar -->
@@ -144,7 +131,7 @@
               combinar mis dos pasiones
             </p>
           </div>
-          <a href="./pages/about.html" class="btn btn-outline-success btn-lg"
+          <a href="./about.html" class="btn btn-outline-success btn-lg"
             >Mas Sobre mi</a
           >
         </div>
@@ -168,7 +155,7 @@
         <div class="sidebarNewsletter">
           <h2>Suscríbete a nuestro Newsletter</h2>
           <p>Recibe las últimas novedades y recetas en tu mail.</p>
-          <form class="sidebarNewsletter-form" action="" method="POST">
+          <form class="sidebarNewsletter-form" action="./bienvenido.html" method="GET">
             <input
               type="email"
               name="email"

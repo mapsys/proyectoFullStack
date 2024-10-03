@@ -9,13 +9,17 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Mi Cocina</title>
   </head>
   <body>
     <header class="header">
       <div class="logo">
-        <img src="./images/pngegg.png" alt="logo" />
+        <img src="../images/pngegg.png" alt="logo" />
       </div>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -68,14 +72,65 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="gridPageBienvenido">
       <section class="bienvenida">
         <h1>Gracias por habernos dejado tus datos</h1>
 
         <h2>Te contactaremos a la brevedad</h2>
       </section>
+      <aside class="sidebar">
+        <div class="sidebarAbout">
+          <img src="../images/SobreMi.png" alt="" />
+          <div class="sidebarDescripcion">
+            <p>
+              Gracias por visitar mi pagina. Soy un fanatico de la cocina que
+              tambien hizo una carrera en IT por lo que en esta pagina intentare
+              combinar mis dos pasiones
+            </p>
+          </div>
+          <a href="./about.html" class="btn btn-outline-success btn-lg"
+            >Mas Sobre mi</a
+          >
+        </div>
+        <div class="sidebarSociales">
+          <h3>Seguinos</h3>
+          <div class="sidebarSocialesIconos">
+            <a href="https://www.instagram.com" target="_blank"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="bi bi-twitter"></i
+            ></a>
+            <a href="https://www.youtube.com" target="_blank"
+              ><i class="bi bi-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div class="sidebarNewsletter">
+          <h2>Suscríbete a nuestro Newsletter</h2>
+          <p>Recibe las últimas novedades y recetas en tu mail.</p>
+          <form class="sidebarNewsletter-form" action="" method="POST">
+            <input
+              type="email"
+              name="email"
+              placeholder="Introduce tu correo electrónico"
+              required
+            />
+            <br />
+            <button class="btn btn-success" type="submit">Suscribirse</button>
+          </form>
+        </div>
+        <div class="sidebarBook">
+          <h2>Adquiri nuestro libro</h2>
+          <img src="../images/libro.webp" alt="" />
+          <p>Una compilacion de todas las recetas pasadas, presentes y faltantes</p>
+        </div>
+      </aside>
     </main>
-    <footer class="footer-container">
+    <footer class="footer">
       <div class="redes">
         <h1>Comunicate con nosotros</h1>
         <img src="../images/whatsapp.png" alt="whatsapp" />
