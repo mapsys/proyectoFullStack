@@ -393,12 +393,12 @@ height: 100%;
 }
 
 .recetaIngredientes li {
-  margin-left: 20px; /* Para que quede espacio entre el icono y el texto */
-  background-image: url("../images/pngegg.png"); /* Reemplaza con la URL de tu imagen */
+  margin-left: 20px; 
+  background-image: url("../images/pngegg.png"); 
   background-repeat: no-repeat;
-  background-size: 16px 16px; /* Ajusta el tamaño del icono */
-  background-position: 0 50%; /* Ajusta la posición del icono */
-  padding-left: 30px; /* Espacio para el texto después del icono */
+  background-size: 16px 16px; 
+  background-position: 0 50%; 
+  padding-left: 30px; 
 }
 .recetaPreparacion {
   grid-area: preparacion;
@@ -415,30 +415,57 @@ height: 100%;
 }
 
 .carousel-inner img {
-  width: auto; /* Escala las imágenes al 100% del ancho del carrusel */
- /* Mantiene la proporción de las imágenes */
-   /* Limita la altura de las imágenes para que el carrusel sea más pequeño */
+  width: auto; 
 }
 
 .fotosButton {
   background-color: #f1ba7b !important;
 }
 .carousel-control-prev, .carousel-control-next {
-  width: 10%; /* Reduce el área clicable de los botones de control */
+  width: 10%; 
 }
 .carousel-caption h5 {
-  font-size: 1.5rem; /* Reduce el tamaño de las leyendas para adaptarse al nuevo tamaño */
+  font-size: 1.5rem; 
 }
 
 
 .fotosControl {
   background-color: rgb(234, 194, 61) !important;
-  width: 30px; /* Reduce el tamaño del ícono del control */
-  height: 30px; /* Reduce el tamaño del ícono del control */
-   /* Hace los íconos redondeados para que luzcan mejor al ser más pequeños */
+  width: 30px; 
+  height: 30px; 
 }
   
-  /* Pagina Sidebar */
+/* Pagina Contacto */
+.contactMainContent {
+  display: grid;
+  grid-template-areas:
+    "main main main sidebar";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 80%;
+  margin: 20px auto;
+  gap: 5px;
+}
+.form-datos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 10px;
+  gap: 10px;
+}
+.contactosForm{
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width:90%;
+  margin-left: 40px;
+}
+
+
+  /* Sidebar */
 .sidebar {
   grid-area: sidebar;
   display: flex;
