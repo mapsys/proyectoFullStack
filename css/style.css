@@ -409,17 +409,33 @@ height: 100%;
 
 /* Pagina Fotos */
 .fotosMainContent{
-  width: 80%;
+  width: 30%;
   margin: 20px auto;
   position: relative;
 }
 
-.fotosButton{
-  background-color: #f1ba7b !important;
+.carousel-inner img {
+  width: auto; /* Escala las imágenes al 100% del ancho del carrusel */
+ /* Mantiene la proporción de las imágenes */
+   /* Limita la altura de las imágenes para que el carrusel sea más pequeño */
 }
 
-.fotosControl{
-  background-color: blue !important;
+.fotosButton {
+  background-color: #f1ba7b !important;
+}
+.carousel-control-prev, .carousel-control-next {
+  width: 10%; /* Reduce el área clicable de los botones de control */
+}
+.carousel-caption h5 {
+  font-size: 1.5rem; /* Reduce el tamaño de las leyendas para adaptarse al nuevo tamaño */
+}
+
+
+.fotosControl {
+  background-color: rgb(234, 194, 61) !important;
+  width: 30px; /* Reduce el tamaño del ícono del control */
+  height: 30px; /* Reduce el tamaño del ícono del control */
+   /* Hace los íconos redondeados para que luzcan mejor al ser más pequeños */
 }
   
   /* Pagina Sidebar */
