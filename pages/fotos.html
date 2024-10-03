@@ -68,105 +68,102 @@
         </div>
       </nav>
     </header>
-    <section class="bienvenida">
-      <h1>
-        Aqui podras ver algunas <a href="#imagenes">imagenes</a> mias y las que
-        nos dejaron los lectores
-      </h1>
-      <h2>
-        Tambien podras ver <a href="#videos">videos</a> de mis cocineros
-        favoritos
-      </h2>
-    </section>
-    <div class="mainContent">
-      <section class="fotos" id="imagenes">
-        <table>
-          <tr>
-            <td>
-              <img
-                src="../images/Pasteleria 1 - Demo 2 - Streusel, masas andrea, Sable de manga, galletitas.JPG"
-                alt=""
-                width="100"
-                height="100"
-                class="imgSmall"
-              />
-              <img
-                src="../images/Pasteleria 1 - Demo 2 - Torta de ricota limon y amapolas.JPG"
-                alt=""
-                width="100"
-                height="100"
-                class="imgSmall"
-              />
-              <img
-                src="../images/Pasteleria 1 - Demo 2 - Streusel, masas andrea, Sable de manga, galletitas.JPG"
-                alt=""
-                width="100"
-                height="100"
-                class="imgSmall"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img
-                src="../images/Pasteleria 1 - Demo 1 - Budin Hamburgues.JPG"
-                alt=""
-                width="100"
-                height="100"
-                class="imgSmall"
-              />
-              <img
-                src="../images/Pasteleria 1 - Demo 1 - Budin marmolado.JPG"
-                alt=""
-                width="100"
-                height="100"
-                class="imgSmall"
-              />
-              <img
-                src="../images/Pasteleria 1 - Demo 1 - Cake de manzana y Profiteroles.JPG"
-                alt=""
-                width="100"
-                height="100"
-                class="imgSmall"
-              />
-            </td>
-          </tr>
-        </table>
-      </section>
-      <section class="videosClass" id="videos">
-        <table>
-          <tr>
-            <td>La mas rica Carrot Cake que encontre</td>
-          </tr>
-          <tr>
-            <td>
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/zoyhs-EiJxE?si=g3FoTF6EYTov225u"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
-            </td>
-          </tr>
-        </table>
-      </section>
-    </div>
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <img src="../images/blank-profile.jpg" alt="" />
-      <div class="descripcion">
-        <p>
-          Gracias por visitar mi pagina. Soy un fanatico de la cocina que
-          tambien hizo una carrera en IT por lo que en esta pagina intentare
-          combinar mis dos pasiones
-        </p>
-      </div>
-    </aside>
 
+    <div class="fotosMainContent">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active fotosButton"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+            class="fotosButton"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+            class="fotosButton"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+            class="fotosButton"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="../images/Oatmeal-Cookies-Feature.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-dark fs-2 fw-bold">Galletitas de Avena y pasas</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../images/Apple-Pie-Recipe-Feature.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-dark fs-2 fw-bold">Tarta de Manzanas</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../images//Caramel-Brownies-Feature.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-dark fs-2 fw-bold">Brownies de Caramelo</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../images/Carrot-Cake-Feature.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-dark fs-2 fw-bold">Carrot Cake</h5>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon fotosControl" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon fotosControl" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
     <footer class="footer">
       <div class="redes">
         <h1>Comunicate con nosotros</h1>

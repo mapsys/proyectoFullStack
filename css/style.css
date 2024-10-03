@@ -13,7 +13,6 @@ body {
 }
 
 /* Header */
-
 .header {
   display: flex;
   padding: 20px;
@@ -103,16 +102,11 @@ body {
   width: 70%;
 }
 .top3-title {
-  position: absolute; /* Esto coloca el texto encima de la imagen */
-  bottom: 10px; /* Ajusta la posición para que quede donde quieras */
+  position: absolute;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Fondo semi-transparente para mejor legibilidad */
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 10px;
   border-radius: 5px;
@@ -181,7 +175,7 @@ body {
   padding-right: 20px;
 }
 
-/* top3 Page */
+/* Pagina top3 */
 .gridTop3Page {
   display: grid;
   grid-template-areas:
@@ -315,16 +309,11 @@ body {
 }
 
 .top3PageTitle {
-  position: absolute; /* Esto coloca el texto encima de la imagen */
-  bottom: 10px; /* Ajusta la posición para que quede donde quieras */
+  position: absolute;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Fondo semi-transparente para mejor legibilidad */
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 10px;
   border-radius: 5px;
@@ -337,7 +326,103 @@ body {
   color: #f6ebeb;
   font-size: 2rem;
 }
-/* Sidebar */
+
+/* Pagina Recetas */
+.mainContentRecipes {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  gap: 20px;
+  margin: 10px auto;
+}
+.recetasIndice{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #efab77;
+  padding: 11px 10px;
+  font-size: medium;
+  width: 100%;
+  margin: auto;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+.recetasIndice ul{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+height: 100%;
+}
+.recetasArticle {
+  display: grid;
+  grid-template-areas:
+    "imagen  ingredientes ingredientes ingredientes"
+    "preparacion preparacion preparacion preparacion";
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+}
+.recetaImagen {
+  grid-area: imagen;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.recetaImagen img{
+  width: 60%;
+  height: auto;
+
+}
+.recetaIngredientes {
+  grid-area: ingredientes;
+  width: 100%;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex ;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.recetaIngredientes ul{
+  list-style-type: none;
+}
+
+.recetaIngredientes li {
+  margin-left: 20px; /* Para que quede espacio entre el icono y el texto */
+  background-image: url("../images/pngegg.png"); /* Reemplaza con la URL de tu imagen */
+  background-repeat: no-repeat;
+  background-size: 16px 16px; /* Ajusta el tamaño del icono */
+  background-position: 0 50%; /* Ajusta la posición del icono */
+  padding-left: 30px; /* Espacio para el texto después del icono */
+}
+.recetaPreparacion {
+  grid-area: preparacion;
+  width: 100%;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/* Pagina Fotos */
+.fotosMainContent{
+  width: 80%;
+  margin: 20px auto;
+  position: relative;
+}
+
+.fotosButton{
+  background-color: #f1ba7b !important;
+}
+
+.fotosControl{
+  background-color: blue !important;
+}
+  
+  /* Pagina Sidebar */
 .sidebar {
   grid-area: sidebar;
   display: flex;
@@ -438,6 +523,42 @@ body {
   width: 75%;
   font-size: 2rem;
 }
+
+/* About page */
+.aboutGrid {
+  display: grid;
+  grid-template-areas: "main main main sidebar";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 80%;
+  margin: 10px auto;
+  gap: 5px;
+}
+.aboutContent {
+  grid-area: main;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.aboutContent img {
+  width: 50%;
+  height: auto;
+  border-radius: 20px;
+  margin: 30px;
+}
+
+.aboutContent h1 {
+  color: #975a2c;
+  font-size: 4rem;
+}
+
+.aboutContent p {
+  width: 80%;
+  font-size: 2rem;
+  text-align: justify;
+}
 /* Footer */
 .footer {
   grid-area: footer;
@@ -467,7 +588,6 @@ body {
 /* Media queries */
 
 @media (max-width: 500px) {
-
   /* Main page */
   .gridTopMainSide {
     display: grid;
@@ -520,5 +640,26 @@ body {
   }
   .top3PageSidebar {
     display: none;
+  }
+
+  /* About page */
+  .aboutGrid {
+    display: grid;
+    grid-template-areas:
+      "main"
+      "sidebar";
+    grid-template-columns: 1fr;
+  }
+  .aboutGrid p {
+    font-size: 1.5rem;
+  }
+  .recetasArticle {
+    display: grid;
+    grid-template-areas:
+      "imagen "
+      "ingredientes"
+      "preparacion";
+    grid-template-columns: 1fr;
+    width: 100%;
   }
 }
