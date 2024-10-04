@@ -564,6 +564,26 @@ height: 50%;
   width: 100%;
   margin-bottom: 20px;
 }
+
+/* volver arriba */
+.volverArriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e3c138;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.volverArriba:hover {
+  background-color: #ddc528;
+  cursor: pointer;
+}
 /* Sidebar */
 .sidebar {
   grid-area: sidebar;
@@ -571,7 +591,7 @@ height: 50%;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  background-color: rgb(229, 224, 218);
+  background-color: rgb(193, 113, 17);
   border-radius: 10px;
   gap: 60px;
 }
