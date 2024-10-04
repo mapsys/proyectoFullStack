@@ -352,9 +352,9 @@ body {
 
 .recetasIndice .navbar-nav {
   display: grid;
-  grid-template-rows: repeat(3, auto); 
-  grid-auto-flow: column; 
-  gap: 10px; 
+  grid-template-rows: repeat(3, auto);
+  grid-auto-flow: column;
+  gap: 10px;
 }
 
 .recetasIndice .nav-item {
@@ -463,11 +463,11 @@ body {
   background-color: #f9f9f9;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-height: 50%;
+  height: 50%;
 }
 
 .contactosForm h1 {
-  font-family: "Poppins", sans-serif ;
+  font-family: "Poppins", sans-serif;
   font-size: 2.5rem;
   color: #333;
   margin-bottom: 20px;
@@ -517,7 +517,7 @@ height: 50%;
   transform: translateY(-2px);
 }
 /* Pagina de agradecimiento */
-.gridPageBienvenido{
+.gridPageBienvenido {
   display: grid;
   grid-template-areas: "main main main sidebar";
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -526,7 +526,7 @@ height: 50%;
   justify-content: center;
   gap: 5px;
 }
-.bienvenida{
+.bienvenida {
   grid-area: main;
   display: flex;
   flex-direction: column;
@@ -564,7 +564,7 @@ height: 50%;
   margin: 0 auto;
   border: 2px solid black;
 }
-.wirefremaMPageMainContent img{
+.wirefremaMPageMainContent img {
   width: 100%;
 }
 .wireframePageHeader {
@@ -834,14 +834,16 @@ height: 50%;
     width: 100%;
   }
   .contactMainContent {
-    grid-template-areas: "main"
-    "sidebar";
+    grid-template-areas:
+      "main"
+      "sidebar";
     grid-template-columns: 1fr;
   }
-  .gridPageBienvenido{
+  .gridPageBienvenido {
     display: grid;
-    grid-template-areas: "main"
-    "sidebar";
+    grid-template-areas:
+      "main"
+      "sidebar";
     grid-template-columns: 1fr;
     width: 80%;
     margin: 20px auto;
@@ -861,8 +863,8 @@ height: 50%;
   }
   .recetasIndice .navbar-nav {
     display: grid;
-    grid-template-columns: 1fr; 
-    gap: 10px; 
+    grid-template-columns: 1fr;
+    gap: 10px;
     grid-auto-flow: row;
   }
 }
