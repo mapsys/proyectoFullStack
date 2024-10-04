@@ -350,12 +350,21 @@ body {
   justify-content: space-between;
 }
 
-.recetasIndice ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: 100%;
+.recetasIndice .navbar-nav {
+  display: grid;
+  grid-template-rows: repeat(3, auto); 
+  grid-auto-flow: column; 
+  gap: 10px; 
 }
+
+.recetasIndice .nav-item {
+  display: contents; /* Permite que los elementos `a` ocupen las celdas del grid */
+}
+
+.recetasIndice .nav-link:hover {
+  background-color: #e2e6ea; /* Cambia el color al pasar el cursor */
+}
+
 .recetasArticle {
   display: grid;
   grid-template-areas:
@@ -850,5 +859,10 @@ height: 50%;
     margin: 10px auto;
     gap: 5px;
   }
- 
+  .recetasIndice .navbar-nav {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 10px; 
+    grid-auto-flow: row;
+  }
 }
