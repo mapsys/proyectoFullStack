@@ -41,6 +41,15 @@ body {
   color: #d67c15 !important;
 }
 
+.dropdown-menu {
+  background-color: #efab77 !important;
+  white-space: nowrap;
+  width: auto;
+}
+.nav-link {
+  font-size: 1.5rem;
+}
+
 /* Grilla Principal */
 
 .gridTopMainSide {
@@ -327,7 +336,7 @@ body {
   font-size: 2rem;
 }
 
-/* Pagina Recetas */
+/* Pagina Ultima Recetas */
 .mainContentRecipes {
   display: flex;
   flex-direction: column;
@@ -358,14 +367,14 @@ body {
 }
 
 .recetasIndice .nav-item {
-  display: contents; /* Permite que los elementos `a` ocupen las celdas del grid */
+  display: contents;
 }
 
 .recetasIndice .nav-link:hover {
-  background-color: #e2e6ea; /* Cambia el color al pasar el cursor */
+  background-color: #e2e6ea;
 }
 
-.recetasArticle {
+.ultimasArticle {
   display: grid;
   grid-template-areas:
     "imagen  ingredientes ingredientes ingredientes"
@@ -373,7 +382,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
 }
-.recetaImagen {
+.ultimasImagen {
   grid-area: imagen;
   border: 1px solid black;
   padding: 10px;
@@ -383,11 +392,11 @@ body {
   align-items: center;
   width: 100%;
 }
-.recetaImagen img {
+.ultimasImagen img {
   width: 60%;
   height: auto;
 }
-.recetaIngredientes {
+.ultimasIngredientes {
   grid-area: ingredientes;
   width: 100%;
   border: 1px solid black;
@@ -396,11 +405,11 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.recetaIngredientes ul {
+.ultimasIngredientes ul {
   list-style-type: none;
 }
 
-.recetaIngredientes li {
+.ultimasIngredientes li {
   margin-left: 20px;
   background-image: url("../images/pngegg.png");
   background-repeat: no-repeat;
@@ -408,7 +417,7 @@ body {
   background-position: 0 50%;
   padding-left: 30px;
 }
-.recetaPreparacion {
+.ultimasPreparacion {
   grid-area: preparacion;
   width: 100%;
   border: 1px solid black;
@@ -756,6 +765,24 @@ body {
   margin-bottom: 10px;
 }
 
+/* Pagina Recetas */
+
+.container {
+  width: 80%;
+}
+.myclass {
+  background-color: #28a745;
+  height: 200px;
+}
+
+.myclass2 {
+  background-color: #341380;
+  height: 200px;
+}
+.myclass3{
+  background-color: #6d370f;
+  height: 200px;
+} 
 /* Media queries */
 
 @media (max-width: 500px) {
@@ -824,10 +851,10 @@ body {
   .aboutGrid p {
     font-size: 1.5rem;
   }
-  .recetasArticle {
+  .ultimasArticle {
     display: grid;
     grid-template-areas:
-      "imagen "
+      "imagen"
       "ingredientes"
       "preparacion";
     grid-template-columns: 1fr;
