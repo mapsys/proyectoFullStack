@@ -10,10 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <title>Mi Cocina</title>
   </head>
@@ -69,15 +66,27 @@
       </nav>
     </header>
 
+    <div class="recetasBienvenida mt-4">
+      <h1 class="fs-1">Nuestra base de recetas</h1>
+      <h2>En esta seccion econtraras todas las recetas que hemos recopilado durante años y que nos han mandado nuestros visitantes</h2>
+      <h3>Animate y mandanos tu receta usando <a href="#enviaReceta"> el Formulario</a></h3>
+    </div>
     <div class="container my-5">
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              <h2 class="fs-1">Galletitas de Avena y pasas</h2>
+            <button
+              class="accordion-button collapsed recetaHeader"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <h2 class="fs-1">Tarta de queso y calabaza sin horno</h2>
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body p-0">
               <div class="row mt-5">
                 <div class="col-12 col-md-7 recetasImagenes">
@@ -86,23 +95,14 @@
                 <div class="col-12 col-md-5 recetasIngredientes">
                   <h2>Ingredientes</h2>
                   <ul>
-                    <li><span>1 1/2 tazas de harina para todo uso (180 g)</span></li>
-                    <li><span>3/4 cucharadita de bicarbonato de sodio</span></li>
-                    <li><span>1/4 cucharadita de polvo para hornear</span></li>
-                    <li><span>1/4 cucharadita de polvo para hornear</span></li>
-                    <li><span>1/2 cucharadita de sal</span></li>
-                    <li><span>1 cucharadita de canela molida</span></li>
-                    <li>
-                      <span>1 taza de mantequilla sin sal a temperatura ambiente (226 g) </span>
-                    </li>
-                    <li><span>1 taza de azúcar moreno claro envasada (220 g)</span></li>
-                    <li><span>1/2 taza de azúcar granulada (100g)</span></li>
-                    <li><span>2 huevos grandes</span></li>
-                    <li><span>2 cucharaditas de extracto de vainilla</span></li>
-                    <li>
-                      <span>2 1/2 tazas de copos de avena a la antigua (280 g)</span>
-                    </li>
-                    <li><span>1 taza de pasas (u otras mezclas) (160 g)</span></li>
+                    <li><span>1 paquete de 226 g de queso crema a temperatura ambiente</span></li>
+                    <li><span>1/2 taza de azúcar glas (60 g)</span></li>
+                    <li><span>1 taza de puré de calabaza (245 g)</span></li>
+                    <li><span>1 cucharadita de especias para pastel de calabaza</span></li>
+                    <li><span>1 cucharadita de canela</span></li>
+                    <li><span>1 cucharadita de extracto de vainilla</span></li>
+                    <li><span>2 tazas de crema batida (150 g)</span></li>
+                    <li><span>1 base de galleta graham</span></li>
                   </ul>
                 </div>
               </div>
@@ -111,22 +111,29 @@
                   <div>
                     <h2>Preparacion</h2>
                     <ol>
-                      <li>En un tazón mediano, mezcle la harina, el bicarbonato de sodio, el polvo para hornear, la sal y la canela.</li>
                       <li>
-                        En un tazón grande para mezclar o en el tazón de una batidora de pie equipada con el accesorio de paleta, combine la mantequilla con ambos azúcares. Batir a
-                        velocidad media hasta que esté suave y esponjoso, aproximadamente 3 minutos.
+                        <span
+                          >Agrega el queso crema ablandado en un tazón grande. Tamiza el azúcar en polvo sobre la parte superior. Con una batidora eléctrica de mano (o en el tazón
+                          de una batidora de pie con el accesorio de paleta) bate a velocidad media durante 1 minuto, hasta que esté bien combinado.</span
+                        >
                       </li>
                       <li>
-                        Reduzca la velocidad a baja. Agrega los huevos y la vainilla y bate hasta que estén bien mezclados, aproximadamente 1 minuto. Agrega la mezcla de harina y
-                        bate hasta que esté casi combinado. Agrega la avena y las pasas. Forme bolas del tamaño de 2 cucharadas con la masa, cubra y enfríe durante 1 hora o hasta
-                        72 horas.
+                        <span
+                          >Agrega el puré de calabaza, las especias para pastel de calabaza, la canela y la vainilla. Batir durante 1 minuto más hasta que esté completamente
+                          combinado.</span
+                        >
                       </li>
-                      <li>Precaliente el horno a 350°F. Forre dos bandejas para hornear con papel pergamino.</li>
-                      <li>Coloque las bolas de masa a una distancia de aproximadamente 2 pulgadas sobre las bandejas para hornear forradas con papel pergamino.</li>
                       <li>
-                        Hornee durante 12 a 14 minutos, o hasta que las galletas estén doradas en los bordes pero aún suaves en el centro. (Los centros aún deben verse húmedos y
-                        brillantes, pero se asentarán una vez que se enfríen). Deje enfriar en los moldes durante unos minutos, luego transfiéralo a una rejilla y déjelo enfriar
-                        por completo.
+                        <span
+                          >Incorpora la crema batida. (También puedes usar 2 tazas de cobertura batida congelada y descongelada en lugar de la crema batida recién batida).</span
+                        >
+                      </li>
+                      <li><span>Vierte la cobertura en la base y espárcela en una capa uniforme.</span></li>
+                      <li>
+                        <span
+                          >Refrigerar durante al menos 8 horas o hasta 48 horas hasta que el relleno esté listo y se pueda cortar. Servir las rebanadas cubiertas con otra cucharada
+                          de crema batida.</span
+                        >
                       </li>
                     </ol>
                   </div>
@@ -137,32 +144,435 @@
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Accordion Item #2
+            <button
+              class="accordion-button collapsed recetaHeader"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="true"
+              aria-controls="collapseTwo"
+            >
+              <h2 class="fs-1">Tarta de nueces Pecan</h2>
             </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each
-              element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-              our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <div class="accordion-body p-0">
+              <div class="row mt-5">
+                <div class="col-12 col-md-7 recetasImagenes">
+                  <img class="w-75 ps-5" src="../images/Pecan-pie-Feature-new-720x991.jpg" alt="" />
+                </div>
+                <div class="col-12 col-md-5 recetasIngredientes">
+                  <h2>Ingredientes</h2>
+                  <ul>
+                    <li><span>1 masa de tarta de 23 cm congelada y sin hornear*</span></li>
+                    <li><span>11/2 taza de nueces pecanas picadas gruesas 180 g</span></li>
+                    <li><span>1 taza de jarabe de maíz oscuro 240 ml/350 g</span></li>
+                    <li><span>3/4 taza de azúcar granulada 150 g</span></li>
+                    <li><span>3 huevos grandes</span></li>
+                    <li><span>4 cucharadas de mantequilla sin sal derretida (57 g)</span></li>
+                    <li><span>2 cucharaditas de extracto de vainilla</span></li>
+                    <li><span>3/4 cucharadita de sal</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 recetasPreparacion pt-5 m-3">
+                  <div>
+                    <h2>Preparacion</h2>
+                    <ol>
+                      <li><span>Precaliente el horno a 220 °C (425 °F).</span></li>
+                      <li><span>Coloque la masa de tarta congelada en una bandeja para hornear y rellénela con las nueces pecanas picadas.</span></li>
+                      <li>
+                        <span
+                          >En un tazón mediano, mezcle el jarabe de maíz, el azúcar, los huevos, la mantequilla derretida, la vainilla y la sal hasta que estén bien combinados.
+                          Vierta sobre las nueces pecanas. (Si lo desea, coloque mitades de nueces pecanas adicionales encima en un patrón decorativo).</span
+                        >
+                      </li>
+                      <li>
+                        <span
+                          >Hornee durante 15 minutos. Reduzca la temperatura del horno a 175 °C (350 °F). Continúe horneando durante 35 a 40 minutos o hasta que el relleno se infle
+                          y el centro se mueva levemente al sacudirlo suavemente. Cúbralo con papel de aluminio sin apretarlo en cualquier momento durante la cocción si la corteza
+                          se dora demasiado rápido. Deje enfriar completamente sobre una rejilla antes de cortarlo.</span
+                        >
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Accordion Item #3
+            <button
+              class="accordion-button collapsed recetaHeader"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              <h2 class="fs-1">Masa de Tarta</h2>
             </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each
-              element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-              our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <div class="accordion-body p-0">
+              <div class="row mt-5">
+                <div class="col-12 col-md-7 recetasImagenes">
+                  <img class="w-75 ps-5" src="../images/pie-crust-feature-NEW-720x991.jpg" alt="" />
+                </div>
+                <div class="col-12 col-md-5 recetasIngredientes">
+                  <h2>Ingredientes</h2>
+                  <ul>
+                    <li><span>3 tazas de harina común (360 g)</span></li>
+                    <li><span>1 cucharada de azúcar</span></li>
+                    <li><span>1 cucharadita de sal</span></li>
+                    <li><span>1 taza de mantequilla fría sin sal cortada en cubos (227 g)</span></li>
+                    <li><span>4 a 6 cucharadas de agua helada (60-90 ml)</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 recetasPreparacion pt-5 m-3">
+                  <div>
+                    <h2>Preparacion</h2>
+                    <ol>
+                      <li><span>En el bol de un procesador de alimentos, combine 1½ tazas de harina, azúcar y sal. Pulse unas cuantas veces para combinar.</span></li>
+                      <li>
+                        <span
+                          >Agregue la mitad de la mantequilla. Procese hasta que esté muy desmenuzada y comience a formar bolitas, aproximadamente 30 segundos. Esparza la
+                          mantequilla restante y las 1½ tazas de harina restantes. Pulse 2 veces solo para distribuir.</span
+                        >
+                      </li>
+                      <li>
+                        <span
+                          >Rocíe 4 cucharadas de agua helada sobre la mezcla. Pulse unas cuantas veces. Agregue agua adicional, una cucharada a la vez, según sea necesario, y pulse
+                          una o dos veces después de cada adición. La mezcla debe unirse fácilmente al apretarla, pero no sentirse húmeda ni seca.</span
+                        >
+                      </li>
+                      <li>
+                        <span
+                          >Transfiera la masa a la mesada y forme una bola. Corte la bola por la mitad y presione cada mitad en un plato. Envuélvala bien en film transparente y
+                          refrigérela durante al menos 1 hora o hasta 2 días. Los discos también se pueden congelar durante unos meses y descongelar en el refrigerador durante la
+                          noche antes de usarlos.</span
+                        >
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed recetaHeader"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse4"
+              aria-expanded="false"
+              aria-controls="collapse4"
+            >
+              <h2 class="fs-1">Pound Cake</h2>
+            </button>
+          </h2>
+          <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body p-0">
+              <div class="row mt-5">
+                <div class="col-12 col-md-7 recetasImagenes">
+                  <img class="w-75 ps-5" src="../images/Pound-Cake-Feature-720x991.jpg" alt="" />
+                </div>
+                <div class="col-12 col-md-5 recetasIngredientes">
+                  <h2>Ingredientes</h2>
+                  <ul>
+                    <li><span>4 huevos</span></li>
+                    <li><span>1 taza de mantequilla sin sal (226 g) a temperatura ambiente</span></li>
+                    <li><span>1 taza de azúcar (200 g)</span></li>
+                    <li><span>11/2 taza de harina común (180 g)</span></li>
+                    <li><span>1/2 taza de crema agria (120 ml)</span></li>
+                    <li><span>1 cucharadita de sal</span></li>
+                    <li><span>2 cucharadas de vainilla</span></li>
+                    <li><span>1/2 cucharadita de polvo para hornear</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 recetasPreparacion pt-5 m-3">
+                  <div>
+                    <h2>Preparacion</h2>
+                    <ol>
+                      <li><span>Precaliente el horno a 350 °F. Enmanteque y enharine un molde para hornear de 9 × 5 pulgadas.</span></li>
+                      <li><span>En un tazón mediano, bata la harina, la sal y el polvo para hornear y luego reserve.</span></li>
+                      <li>
+                        <span
+                          >En una batidora de pie equipada con un accesorio para batir, bata la mantequilla. Agregue el azúcar y mezcle hasta que la mezcla quede suave y esponjosa.
+                          Raspe el tazón hacia abajo y bata unos segundos más.</span
+                        >
+                      </li>
+                      <li>
+                        <span>Agregue los huevos de a uno por vez mientras mezcla a velocidad media. Raspe el tazón hacia abajo y bata hasta que se incorporen por completo.</span>
+                      </li>
+                      <li><span>Agregue la crema agria y la vainilla. Mezcle hasta que se incorporen. Raspe el tazón hacia abajo.</span></li>
+                      <li>
+                        <span
+                          >Agregue la mezcla de harina y mezcle hasta que se combine. Raspe el recipiente y use la espátula para mezclar los restos de harina o mantequilla.</span
+                        >
+                      </li>
+                      <li><span>Deje enfriar en el molde durante aproximadamente 10 minutos antes de transferirlo a una rejilla para enfriar.</span></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed recetaHeader"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse5"
+              aria-expanded="false"
+              aria-controls="collapse5"
+            >
+              <h2 class="fs-1">Torta de chocolate</h2>
+            </button>
+          </h2>
+          <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body p-0">
+              <div class="row mt-5">
+                <div class="col-12 col-md-7 recetasImagenes">
+                  <img class="w-75 ps-5" src="../images/Chocolate-Cake-R-Feature-720x991.jpg" alt="" />
+                </div>
+                <div class="col-12 col-md-5 recetasIngredientes">
+                  <h2>Ingredientes</h2>
+                  <h3>Para el pastel</h3>
+                  <ul>
+                    <li><span>2 tazas de harina común (240 g)</span></li>
+                    <li><span>2 tazas de azúcar granulada (400 g)</span></li>
+                    <li><span>1/2 taza de cacao en polvo sin azúcar (50 g)</span></li>
+                    <li><span>1 1/2 cucharadita de levadura en polvo</span></li>
+                    <li><span>1 1/2 cucharadita de bicarbonato de sodio</span></li>
+                    <li><span>1/2 cucharadita de sal kosher</span></li>
+                    <li><span>1 taza de leche (240 ml)</span></li>
+                    <li><span>2 huevos grandes</span></li>
+                    <li><span>1/2 taza de aceite vegetal (180 ml)</span></li>
+                    <li><span>1 cucharada de extracto de vainilla</span></li>
+                    <li><span>1 taza de agua hirviendo (240 ml)</span></li>
+                  </ul>
+                  <h3>Para la crema de mantequilla de chocolate</h3>
+                  <ul>
+                    <li><span>1 1/2 taza de mantequilla sin sal a temperatura ambiente (338 g)</span></li>
+                    <li><span>1/4 taza de cacao en polvo sin azúcar (25 g)</span></li>
+                    <li><span>1/4 cucharadita de sal</span></li>
+                    <li><span>1 cucharadita de vainilla</span></li>
+                    <li><span>6 tazas de azúcar en polvo (680 g)</span></li>
+                    <li><span>3 a 4 cucharadas de leche (45-60 ml)</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 recetasPreparacion pt-5 m-3">
+                  <div>
+                    <h2>Preparacion</h2>
+                    <h3>Para el pastel</h3>
+                    <ol>
+                      <li>
+                        <span
+                          >Precalienta el horno a 350 °F. Engrasa 2 moldes para pastel redondos (de 9 pulgadas) con mantequilla o spray para hornear y cubre el fondo de cada molde
+                          con papel pergamino. (Recomiendo usar tiras para pastel para que la cocción sea más pareja).</span
+                        >
+                      </li>
+                      <li><span>Tamiza la harina, el azúcar, el cacao, el bicarbonato de sodio, el polvo para hornear y la sal en un tazón grande y bate para combinar.</span></li>
+                      <li>
+                        <span
+                          >En un tazón mediano, bate la leche, el huevo, el aceite y la vainilla. Agrega a la mezcla de harina y bate hasta que se integren bien. Vierte el agua
+                          hirviendo y bate hasta que se integren bien. (La masa quedará líquida).</span
+                        >
+                      </li>
+                      <li><span>Divide la masa entre los moldes para pastel preparados.</span></li>
+                      <li>
+                        <span
+                          >Hornea durante 35 minutos o hasta que un palillo insertado en el centro salga limpio. Deja que los pasteles se enfríen en los moldes sobre una rejilla de
+                          alambre durante 15 minutos. Invierte con cuidado las capas de pastel sobre la rejilla, retira el papel pergamino y deja enfriar por completo.</span
+                        >
+                      </li>
+                    </ol>
+                    <h3>Para la crema de mantequilla de chocolate</h3>
+                    <ol>
+                      <li>
+                        <span
+                          >En el bol de una batidora de pie equipada con el accesorio de paleta, bate la mantequilla a velocidad media hasta que quede suave y cremosa,
+                          aproximadamente 2 minutos. Agrega el cacao en polvo y la sal y mezcla a velocidad baja hasta que se combinen. Raspa el bol hacia abajo.</span
+                        >
+                      </li>
+                      <li>
+                        <span
+                          >Mientras mezclas a velocidad baja, agrega gradualmente el azúcar en polvo alternando con un poco de leche de vez en cuando hasta 4 cucharadas. Una vez
+                          que hayas agregado el azúcar, agrega la vainilla. Raspa el bol y bate a velocidad media-baja hasta que quede suave y esponjoso, aproximadamente 1
+                          minuto.</span
+                        >
+                      </li>
+                    </ol>
+                    <h3>Para el armado</h3>
+                    <ol>
+                      <li>
+                        <span
+                          >Coloca una capa de torta enfriada sobre una base para tortas. Cubre con 1 taza de glaseado y extiéndelo por los bordes en una capa uniforme. Coloca la
+                          capa de torta restante encima y esparce el resto del glaseado por todo el exterior de la torta. Puedes reservar un poco del glaseado para decorar con
+                          manga si lo deseas.</span
+                        >
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed recetaHeader"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse6"
+              aria-expanded="false"
+              aria-controls="collapse6"
+            >
+              <h2 class="fs-1">Torta ArcoIris</h2>
+            </button>
+          </h2>
+          <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body p-0">
+              <div class="row mt-5">
+                <div class="col-12 col-md-7 recetasImagenes">
+                  <img class="w-75 ps-5" src="../images/Rainbow-Cake-Feature-720x991.jpg" alt="" />
+                </div>
+                <div class="col-12 col-md-5 recetasIngredientes">
+                  <h2>Ingredientes</h2>
+                  <h3>Para las capas de pastel arcoíris</h3>
+                  <ul>
+                    <li><span>5 tazas de harina común (600 g)</span></li>
+                    <li><span>3 tazas de azúcar granulada (600 g)</span></li>
+                    <li><span>1 cucharada de polvo para hornear</span></li>
+                    <li><span>1/2 cucharadita de bicarbonato de sodio</span></li>
+                    <li><span>1 cucharadita de sal</span></li>
+                    <li><span>6 huevos grandes a temperatura ambiente</span></li>
+                    <li><span>1 1/2 tazas de aceite vegetal (360 ml)</span></li>
+                    <li><span>1 1/2 tazas de leche entera (360 ml)</span></li>
+                    <li><span>1 cucharada de extracto de vainilla</span></li>
+                    <li><span>Colorante alimentario (rojo, amarillo, azul, verde)</span></li>
+                  </ul>
+                  <h3>Para la crema de mantequilla</h3>
+                  <ul>
+                    <li><span>2 1/2 tazas de mantequilla sin sal ablandada (565 g)</span></li>
+                    <li><span>1/2 cucharadita de sal</span></li>
+                    <li><span>10 tazas de azúcar glas (1200 g)</span></li>
+                    <li><span>1/2 taza de crema a temperatura ambiente (120 ml)</span></li>
+                    <li><span>2 cucharaditas de extracto de vainilla</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 recetasPreparacion pt-5 m-3">
+                  <div>
+                    <h2>Preparacion</h2>
+                    <h3>Para las capas de pastel arcoíris</h3>
+                    <ol>
+                      <li>
+                        <span
+                          >Precalienta el horno a 350 °F. Engrasa dos o tres moldes para pastel redondos de 8 pulgadas con spray para hornear o mantequilla. Cubre las bases con
+                          papel pergamino.</span
+                        >
+                      </li>
+                      <li><span>En un tazón grande, mezcla la harina, el azúcar, el polvo para hornear, el bicarbonato de sodio y la sal.</span></li>
+                      <li>
+                        <span
+                          >En otro tazón grande, combina los huevos, el aceite vegetal, la leche y la vainilla. Bate hasta que se combinen bien. Vierte la mezcla en la harina y
+                          bate hasta que se combinen.</span
+                        >
+                      </li>
+                      <li>
+                        <span
+                          >Divide la masa en 6 tazones. Colorea cada masa con colorante para alimentos para hacer masas de color rojo, naranja, amarillo, verde, azul y violeta.
+                          Vierte una masa de un solo color en cada molde para pastel. Coloca los tazones de masa restantes en el refrigerador hasta que esté listo para hornear.
+                          (Esto ayuda a evitar que el polvo para hornear reaccione mientras esperas para hornear).</span
+                        >
+                      </li>
+                      <li>
+                        <span
+                          >Hornea durante 20 minutos o hasta que un palillo insertado en el centro salga limpio. Deja que los pasteles se enfríen durante 10 minutos en el molde,
+                          luego retíralos y termina de enfriarlos sobre una rejilla. Lave los moldes, engrase y cubra nuevamente con papel de pergamino y hornee las masas
+                          restantes.</span
+                        >
+                      </li>
+                    </ol>
+                    <h3>Para la crema de mantequilla</h3>
+                    <ol>
+                      <li>
+                        <span
+                          >En un tazón grande o en el tazón de una batidora de pie equipada con el accesorio de batidor, bata la mantequilla y la sal a velocidad media hasta que
+                          quede muy esponjosa y pálida, aproximadamente 5 minutos.</span
+                        >
+                      </li>
+                      <li>
+                        <span
+                          >Con la batidora a baja velocidad, agregue gradualmente el azúcar glas, una taza a la vez, agregando una cucharada de crema a la vez durante la mezcla.
+                          Deténgase y raspe el tazón de vez en cuando durante la mezcla. Una vez que haya agregado todo el azúcar, agregue la vainilla y agregue crema adicional si
+                          el glaseado se siente granulado al frotarlo entre los dedos. Aumente la velocidad a media-baja y bata hasta que quede liviano y esponjoso, aproximadamente
+                          1 minuto.</span
+                        >
+                      </li>
+                    </ol>
+                    <h3>Para el armado</h3>
+                    <ol>
+                      <li>
+                        <span
+                          >Retire el papel de pergamino de las capas de pastel. Coloque la capa violeta en un plato para pastel y esparza ½ taza de glaseado sobre la parte
+                          superior. Coloque la capa azul encima y esparza otra ½ taza de glaseado encima. Repita con las capas de pastel restantes en el orden verde, amarillo,
+                          naranja y rojo. Extiende el resto del glaseado por todo el exterior del pastel. Enfríalo durante al menos 1 hora antes de servirlo. El pastel sobrante
+                          debe cubrirse y puede conservarse a temperatura ambiente hasta por 3 días.</span
+                        >
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-recetas-form mt-5" id="enviaReceta">
+        <h2 class="fs-2 text-center">Dejanos aqui tu receta asi la veras publicada</h2>
+        <form class="my-5 w-75 recetas-form">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Nombre</span>
+            <input type="text" class="form-control" placeholder="Ingresa tu nombre" aria-label="Username" aria-describedby="basic-addon1" />
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Email</span>
+            <input type="email" class="form-control" placeholder="Ingresa tu mail" aria-label="Username" aria-describedby="basic-addon1" />
+          </div>
+          <div class="input-group">
+            <span class="input-group-text">Ingredientes</span>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+          <div class="input-group">
+            <span class="input-group-text">Procedimiento</span>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupFile01">Subi la imagen</label>
+            <input type="file" class="form-control" id="inputGroupFile01" />
+          </div>
+
+          <button type="submit" class="btn">Enviar</button>
+        </form>
       </div>
     </div>
 
