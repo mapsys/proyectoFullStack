@@ -1,7 +1,8 @@
+/*header*/
 .header {
   display: flex;
   padding: 20px;
-  background-color: #efab77;
+  background-color:$mainColor;
   padding: 11px 10px;
   font-size: medium;
   width: 80%;
@@ -17,19 +18,48 @@
   }
 }
 
-.navbar {
-  background-color: #efab77 !important;
+.barraMenu {
+  background-color: $mainColor;
+}
+.pageActiva {
+  font-weight: bold;
 }
 
-.nav-item a:hover {
-  color: #d67c15 !important;
+.barraMenu-item a:hover {
+  color:$hoverMainColor;
 }
 
-.dropdown-menu {
-  background-color: #efab77 !important;
+.subMenuRecetas {
+  background-color:$mainColor;
   white-space: nowrap;
   width: auto;
 }
 .nav-link {
   font-size: 1.5rem;
+}
+
+/* Footer */
+.footer {
+  grid-area: footer;
+  padding: 11px 10px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #efab77;
+  padding-left: 30px;
+  font-size: medium;
+  border-radius: 5px;
+  width: 80%;
+}
+.footer img {
+  width: 40px;
+  margin-left: 10px;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }

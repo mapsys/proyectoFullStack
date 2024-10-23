@@ -1,0 +1,113 @@
+/* Pagina top3 */
+.gridTop3Page {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "main main sidebar";
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: 10px auto;
+    gap: 5px;
+  }
+  
+  .top3MPageMainContent {
+    grid-area: main;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+  }
+  .top3MPageMainContent hr {
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid black;
+  }
+  .top3PageHeader {
+    grid-area: header;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .top3Recipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .top3Recipe img {
+    width: 80%;
+  }
+  
+  .top3Recipe p {
+    width: 80%;
+    font-size: 1.5rem;
+  }
+  
+  .top3Recipe h3 {
+    width: 80%;
+    font-size: 3rem;
+    color: #d67c15;
+  }
+  
+  .top3Recipe ul {
+    width: 80%;
+  }
+  .top3PagePreparacion {
+    display: flex;
+    justify-content: flex-start;
+    align-items: self-start;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+  }
+  .top3PagePreparacion ul {
+    width: 80%;
+    font-size: 1.5rem;
+    list-style-type: none;
+    text-align: left;
+  }
+  .top3PagePreparacion ol {
+    width: 80%;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  .top3PageRecipeVideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .top3PageRecipeVideo iframe {
+    width: 80%;
+  }
+  
+  
+  
+  .top3PageTitle {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+  }
+  
+  .top3PageTitle a {
+    text-decoration: none;
+    color: #f6ebeb;
+    font-size: 2rem;
+  }
