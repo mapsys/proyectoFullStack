@@ -33,16 +33,18 @@ body {
   height: 70px;
 }
 
-.navbar {
-  background-color: #efab77 !important;
+.barraMenu {
+  background-color: #efab77;
+}
+.pageActiva {
+  font-weight: bold;
+}
+.barraMenu-item a:hover {
+  color: #d67c15;
 }
 
-.nav-item a:hover {
-  color: #d67c15 !important;
-}
-
-.dropdown-menu {
-  background-color: #efab77 !important;
+.subMenuRecetas {
+  background-color: #efab77;
   white-space: nowrap;
   width: auto;
 }
@@ -292,7 +294,6 @@ body {
   top: 10px;
   gap: 20px;
 }
-
 
 .top3SidebarArticle {
   display: flex;
@@ -554,14 +555,14 @@ body {
 }
 
 /* Modal para agradecer contacto */
-.popup{
+.popup {
   width: 400px;
   background-color: #fff;
   border-radius: 6px;
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%,-50%) scale(0.1);
+  transform: translate(-50%, -50%) scale(0.1);
   text-align: center;
   padding: 0 30px 30px;
   color: #333;
@@ -570,29 +571,29 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
 }
 
-.popup.active{
+.popup.active {
   visibility: visible;
   top: 50%;
-  transform: translate(-50%,-50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
 }
-.popup img{
+.popup img {
   width: 100px;
   margin-top: -50px;
   border-radius: 50%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.popup h2{
+.popup h2 {
   font-size: 38px;
   font-weight: 500;
   margin: 30px 0 10p;
 }
-.popup p{
+.popup p {
   font-size: 18px;
   font-weight: 300;
   margin: 30px 0 10p;
 }
-.popup button{
+.popup button {
   width: 100%;
   margin-top: 50px;
   padding: 10px 0;
@@ -604,7 +605,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-} 
+}
 /* Pagina de agradecimiento */
 .gridPageBienvenido {
   display: grid;
