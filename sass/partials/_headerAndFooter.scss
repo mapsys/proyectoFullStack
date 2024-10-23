@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  padding: 20px;
+  background-color: #efab77;
+  padding: 11px 10px;
+  font-size: medium;
+  width: 80%;
+  margin: auto;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 30%;
+  img {
+    height: 70px;
+  }
+}
+
+.navbar {
+  background-color: #efab77 !important;
+}
+
+.nav-item a:hover {
+  color: #d67c15 !important;
+}
+
+.dropdown-menu {
+  background-color: #efab77 !important;
+  white-space: nowrap;
+  width: auto;
+}
+.nav-link {
+  font-size: 1.5rem;
+}
