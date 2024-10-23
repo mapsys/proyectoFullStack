@@ -1,0 +1,114 @@
+/* Media queries */
+
+@media (max-width: 500px) {
+    /* Main page */
+    .gridTopMainSide {
+      display: grid;
+      grid-template-areas:
+        "top3"
+        "main"
+        "sidebar";
+      grid-template-columns: 1fr;
+      width: 80%;
+      margin: 10px auto;
+      gap: 5px;
+    }
+    .top3-articles {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .top3-article {
+      width: 100%;
+    }
+    .categorie-article {
+      flex-direction: column;
+    }
+    .imageArticle {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .categorie-article img {
+      width: 100%;
+    }
+    .descArticle {
+      width: 100%;
+      font-size: 1.2rem;
+      padding-right: 20px;
+    }
+  
+    /* TOP3 Page */
+    .gridTop3Page {
+      display: grid;
+      grid-template-areas:
+        "header"
+        "main"
+        "sidebar";
+      grid-template-columns: 1fr;
+      width: 80%;
+      margin: 10px auto;
+      gap: 5px;
+    }
+    .top3PageSidebar {
+      display: none;
+    }
+  
+    /* About page */
+    .aboutGrid {
+      display: grid;
+      grid-template-areas:
+        "main"
+        "sidebar";
+      grid-template-columns: 1fr;
+    }
+    .aboutGrid p {
+      font-size: 1.5rem;
+    }
+    .ultimasArticle {
+      display: grid;
+      grid-template-areas:
+        "titulo"
+        "imagen"
+        "ingredientes"
+        "preparacion";
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+  
+    .contactMainContent {
+      grid-template-areas:
+        "main"
+        "sidebar";
+      grid-template-columns: 1fr;
+    }
+    .gridPageBienvenido {
+      display: grid;
+      grid-template-areas:
+        "main"
+        "sidebar";
+      grid-template-columns: 1fr;
+      width: 80%;
+      margin: 20px auto;
+      justify-content: center;
+      gap: 5px;
+    }
+    .gridWireframePage {
+      display: grid;
+      grid-template-areas:
+        "header"
+        "main"
+        "sidebar";
+      grid-template-columns: 1fr;
+      width: 80%;
+      margin: 10px auto;
+      gap: 5px;
+    }
+    .recetasIndice .navbar-nav {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      grid-auto-flow: row;
+    }
+  }

@@ -12,9 +12,17 @@ html {
 body {
   overflow-x: hidden;
 }
-@import "./partials/variables" ;
+
+@import "./partials/variables";
 @import "./partials/headerAndFooter";
 @import "./partials/index";
 @import "./partials/sidebars";
 @import "./partials/top3";
 @import "./partials/ultimasRecetas";
+@import "./partials/fotos";
+@import "./partials/contacto";
+@import "./partials/bienvenido";
+@import "./partials/wireframe";
+@import "./partials/about";
+@import "./partials/recetas";
+@import "./partials/mediaQueries";

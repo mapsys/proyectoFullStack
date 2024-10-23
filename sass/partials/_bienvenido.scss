@@ -1,0 +1,22 @@
+/* Pagina de agradecimiento */
+.gridPageBienvenido {
+    display: grid;
+    grid-template-areas: "main main main sidebar";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    margin: 20px auto;
+    justify-content: center;
+    gap: 5px;
+  }
+  .bienvenida {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    height: 30%;
+  }

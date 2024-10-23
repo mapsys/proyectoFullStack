@@ -20,6 +20,10 @@
   border-radius: 5px;
   justify-content: space-between;
 }
+.baraIndice {
+  background-color: $mainColor;
+  padding: 0;
+}
 
 .recetasIndice .navbar-nav {
   display: grid;
