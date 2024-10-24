@@ -32,36 +32,34 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 10%;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      position: relative;
+      padding-left: 0;
+      text-indent: 0;
+      &::before {
+        content: "\f00c";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        font-size: 16px;
+        color: green;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+        height: 16px;
+      }
+      span {
+        margin-left: 30px;
+        display: block;
+      }
+    }
   }
-  .recetasIngredientes ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .recetasIngredientes li {
-    position: relative;
-    padding-left: 0;
-    text-indent: 0;
-  }
-  
-  .recetasIngredientes li::before {
-    content: "\f00c";
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    font-size: 16px;
-    color: green;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 20px;
-    height: 16px;
-  }
-  .recetasIngredientes li span {
-    margin-left: 30px;
-    display: block;
-  }
-  
+    
   .recetasIngredientes1 h3,
   .recetasIngredientes2 h3,
   .recetasIngredientes h3 {
@@ -88,19 +86,18 @@
     flex-direction: column;
     gap: 20px;
     justify-content: center;
-  }
-  
-  .recetas-form button {
-    padding: 10px 20px;
-    font-size: 1.5rem;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    background-color: #218838;
-    width: 20%;
-  }
-  .recetas-form button:hover {
-    background-color: #9adfa9;
+    button {
+      padding: 10px 20px;
+      font-size: 1.5rem;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      background-color: #218838;
+      width: 20%;
+      &:hover {
+        background-color: #9adfa9;
+      }
+    }
   }

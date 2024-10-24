@@ -17,11 +17,11 @@
     flex-direction: column;
     gap: 30px;
     justify-content: center;
-  }
-  .top3MPageMainContent hr {
-    width: 80%;
-    margin: 0 auto;
-    border: 2px solid black;
+    hr {
+      width: 80%;
+      margin: 0 auto;
+      border: 2px solid black;
+    }
   }
   .top3PageHeader {
     grid-area: header;
@@ -38,25 +38,23 @@
     text-align: center;
     flex-direction: column;
     position: relative;
+    img {
+      width: 80%;
+    }
+    p {
+      width: 80%;
+      font-size: 1.5rem;
+    }
+    h3 {
+      width: 80%;
+      font-size: 3rem;
+      color: #d67c15;
+    }
+    ul {
+      width: 80%;
+    }
   }
-  .top3Recipe img {
-    width: 80%;
-  }
-  
-  .top3Recipe p {
-    width: 80%;
-    font-size: 1.5rem;
-  }
-  
-  .top3Recipe h3 {
-    width: 80%;
-    font-size: 3rem;
-    color: #d67c15;
-  }
-  
-  .top3Recipe ul {
-    width: 80%;
-  }
+
   .top3PagePreparacion {
     display: flex;
     justify-content: flex-start;
@@ -66,18 +64,19 @@
     flex-direction: column;
     position: relative;
     width: 80%;
+    ul {
+      width: 80%;
+      font-size: 1.5rem;
+      list-style-type: none;
+      text-align: left;
+    }
+    ol {
+      width: 80%;
+      font-size: 1.5rem;
+      text-align: left;
+    }
   }
-  .top3PagePreparacion ul {
-    width: 80%;
-    font-size: 1.5rem;
-    list-style-type: none;
-    text-align: left;
-  }
-  .top3PagePreparacion ol {
-    width: 80%;
-    font-size: 1.5rem;
-    text-align: left;
-  }
+
   .top3PageRecipeVideo {
     display: flex;
     justify-content: center;
@@ -86,12 +85,11 @@
     text-align: center;
     flex-direction: column;
     position: relative;
+    iframe {
+      width: 80%;
+    }
   }
-  .top3PageRecipeVideo iframe {
-    width: 80%;
-  }
-  
-  
+
   
   .top3PageTitle {
     position: absolute;
@@ -104,10 +102,9 @@
     border-radius: 5px;
     width: 50%;
     text-align: center;
-  }
-  
-  .top3PageTitle a {
-    text-decoration: none;
-    color: #f6ebeb;
-    font-size: 2rem;
+    a {
+      text-decoration: none;
+      color: #f6ebeb;
+      font-size: 2rem;
+    }
   }

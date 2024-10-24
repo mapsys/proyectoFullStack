@@ -17,15 +17,16 @@
     flex-direction: column;
     gap: 30px;
     justify-content: flex-start;
+    hr {
+      width: 90%;
+      margin: 0 auto;
+      border: 2px solid black;
+    }
+    img {
+      width: 100%;
+    }
   }
-  .wirefremaMPageMainContent hr {
-    width: 90%;
-    margin: 0 auto;
-    border: 2px solid black;
-  }
-  .wirefremaMPageMainContent img {
-    width: 100%;
-  }
+
   .wireframePageHeader {
     grid-area: header;
     text-align: center;

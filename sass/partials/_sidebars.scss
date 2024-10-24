@@ -13,6 +13,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    img {
+      width: 50%;
+      height: auto;
+      border-radius: 100px;
+      margin: 20px;
+    }
   }
   
   .boton-sobreMi {
@@ -23,17 +29,11 @@
     box-shadow: 0 5px 15px rgba(0, 128, 0, 0.2);
     transition: all 0.3s ease;
     width: 50%;
-  }
-  .boton-sobreMi:hover {
-    box-shadow: 0 8px 20px rgba(227, 136, 38, 0.4);
-    transform: translateY(-2px);
-    border-color: #218838;
-  }
-  .sidebarAbout img {
-    width: 50%;
-    height: auto;
-    border-radius: 100px;
-    margin: 20px;
+    &:hover {
+      box-shadow: 0 8px 20px rgba(227, 136, 38, 0.4);
+      transform: translateY(-2px);
+      border-color: #218838;
+    }
   }
   .btn-subscribite {
     background-color: #218838;
@@ -80,18 +80,18 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #555;
+    }
   }
-  .sidebarNewsletter h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .sidebarNewsletter p {
-    font-size: 16px;
-    margin-bottom: 20px;
-    color: #555;
-  }
+
   .sidebarNewsletter-form input[type="email"] {
     padding: 10px;
     font-size: 1rem;
@@ -120,14 +120,15 @@
     align-items: center;
     width: 100%;
     gap: 20px;
+    img {
+      width: 50%;
+    }
+    p {
+      width: 75%;
+      font-size: 2rem;
+    }
   }
-  .sidebarBook img {
-    width: 50%;
-  }
-  .sidebarBook p {
-    width: 75%;
-    font-size: 2rem;
-  }
+
 
 
 /* top3 Sidebar */
@@ -154,13 +155,14 @@
     text-align: center;
     flex-direction: column;
     position: relative;
+    img {
+      width: 38%;
+      height: auto;
+      margin: 5px auto;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
   }
-  .top3SidebarArticle img {
-    width: 38%;
-    height: auto;
-    margin: 5px auto;
-  }
-  .top3SidebarArticle a {
-    text-decoration: none;
-    color: black;
-  }
+

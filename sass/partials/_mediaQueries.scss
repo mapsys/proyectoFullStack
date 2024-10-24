@@ -23,15 +23,15 @@
     }
     .categorie-article {
       flex-direction: column;
+      img {
+        width: 100%;
+      }
     }
     .imageArticle {
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
-    }
-    .categorie-article img {
-      width: 100%;
     }
     .descArticle {
       width: 100%;
@@ -62,9 +62,9 @@
         "main"
         "sidebar";
       grid-template-columns: 1fr;
-    }
-    .aboutGrid p {
-      font-size: 1.5rem;
+      p {
+        font-size: 1.5rem;
+      }
     }
     .ultimasArticle {
       display: grid;

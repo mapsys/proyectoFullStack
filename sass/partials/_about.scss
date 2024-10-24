@@ -15,22 +15,20 @@
     gap: 30px;
     justify-content: flex-start;
     align-items: center;
+    img {
+      width: 50%;
+      height: auto;
+      border-radius: 20px;
+      margin: 30px;
+    }
+    h1 {
+      color: #975a2c;
+      font-size: 4rem;
+    }
+    p {
+      width: 80%;
+      font-size: 2rem;
+      text-align: justify;
+    }
+    
   }
-  .aboutContent img {
-    width: 50%;
-    height: auto;
-    border-radius: 20px;
-    margin: 30px;
-  }
-  
-  .aboutContent h1 {
-    color: #975a2c;
-    font-size: 4rem;
-  }
-  
-  .aboutContent p {
-    width: 80%;
-    font-size: 2rem;
-    text-align: justify;
-  }
-  

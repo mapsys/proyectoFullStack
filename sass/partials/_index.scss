@@ -48,16 +48,17 @@
     text-align: center;
     flex-direction: column;
     position: relative;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 15px;
+    }
+    a {
+      width: 70%;
+    }
   }
-  .top3-article img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 15px;
-  }
-  .top3-article a {
-    width: 70%;
-  }
+ 
   .top3-title {
     position: absolute;
     bottom: 10px;
@@ -69,13 +70,13 @@
     border-radius: 5px;
     width: 70%;
     text-align: center;
+    a {
+      text-decoration: none;
+      color: #f6ebeb;
+      font-size: 2rem;
+    }
   }
   
-  .top3-title a {
-    text-decoration: none;
-    color: #f6ebeb;
-    font-size: 2rem;
-  }
   .top3PageHeader h2,
   .top3PageHeader h3 {
     margin: 0;
@@ -91,12 +92,10 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-  }
-  
-  .mainContent h2,
-  .mainContent h3 {
-    margin: 0 0 20px 0;
-    padding: 10px 0;
+    h2, h3{
+      margin: 0 0 20px 0;
+      padding: 10px 0;
+    }
   }
   
   .categorie-article {
@@ -107,6 +106,13 @@
     margin: 0 auto;
     margin: 10px;
     width: 100%;
+    img {
+      width: 80%;
+      height: auto;
+      display: block;
+      margin: 0 20px 0 0;
+      border-radius: 20px;
+    }
   }
   .imageArticle {
     width: 70%;
@@ -114,15 +120,7 @@
     align-items: center;
     justify-content: center;
   }
-  
-  .categorie-article img {
-    width: 80%;
-    height: auto;
-    display: block;
-    margin: 0 20px 0 0;
-    border-radius: 20px;
-  }
-  
+
   .descArticle {
     display: flex;
     flex-direction: column;
@@ -145,9 +143,8 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s ease;
     z-index: 1000;
-  }
-  
-  .volverArriba:hover {
-    background-color: #ddc528;
-    cursor: pointer;
+    &:hover {
+      background-color: #ddc528;
+      cursor: pointer;
+    }
   }

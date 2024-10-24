@@ -62,10 +62,10 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-}
-.ultimasImagen img {
-  width: 100%;
-  height: auto;
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 .ultimasIngredientes {
   grid-area: ingredientes;
@@ -76,34 +76,32 @@
   flex-direction: column;
   gap: 60px;
   font-size: 1.5rem;
-}
-.ultimasIngredientes ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.ultimasIngredientes li {
-  position: relative;
-  padding-left: 0;
-  text-indent: 0;
-}
-
-.ultimasIngredientes li::before {
-  content: "\f00c";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  font-size: 16px;
-  color: green;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 20px;
-  height: 16px;
-}
-.ultimasIngredientes li span {
-  margin-left: 30px;
-  display: block;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    position: relative;
+    padding-left: 0;
+    text-indent: 0;
+    &::before {
+      content: "\f00c";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      font-size: 16px;
+      color: green;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 20px;
+      height: 16px;
+    }
+    span {
+      margin-left: 30px;
+      display: block;
+    }
+  }
 }
 
 .ultimasIngredientes1 h3,
