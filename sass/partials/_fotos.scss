@@ -4,10 +4,12 @@
     margin: 20px auto;
     position: relative;
   }
-  
-  .fotosButton {
-    background-color: #f1ba7b !important;
+  .carousel-indicators {
+    .fotosButton {
+      background-color: #f1ba7b ;
+    }
   }
+
   .carousel-control-prev,
   .carousel-control-next {
     width: 10%;
@@ -17,7 +19,7 @@
   }
   
   .fotosControl {
-    background-color: rgb(234, 194, 61) !important;
+    background-color: rgb(234, 194, 61) ;
     width: 30px;
     height: 30px;
   }

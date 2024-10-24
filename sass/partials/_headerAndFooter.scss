@@ -2,7 +2,7 @@
 .header {
   display: flex;
   padding: 20px;
-  background-color:$mainColor;
+  background-color: $mainColor;
   padding: 11px 10px;
   font-size: medium;
   width: 80%;
@@ -26,11 +26,11 @@
 }
 
 .barraMenu-item a:hover {
-  color:$hoverMainColor;
+  color: $hoverMainColor;
 }
 
 .subMenuRecetas {
-  background-color:$mainColor;
+  background-color: $mainColor;
   white-space: nowrap;
   width: auto;
 }
@@ -62,43 +62,46 @@
   align-items: center;
   justify-content: space-between;
 
-   .contact{
+  .contact {
     width: 30%;
-   }
-   .social {
+  }
+  .social {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
     width: 30%;
   }
-   .links{
+  .links {
     width: 50%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-   }
-   li{
+  }
+  li {
     margin: 5px;
     list-style: none;
-    a{
-      text-decoration: none;
+
+  }
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    &:hover {
+      color: $hoverMainColor;
     }
-   }
+  }
 }
 
-
-
-
-.footer-bottom{
+.footer-bottom {
   display: flex;
   p {
     font-size: 1.5rem;
   }
 }
-.footer-hr{
+.footer-hr {
   width: 100%;
-  border: none; 
-  border-top: 2px solid #000; 
+  border: none;
+  border-top: 2px solid #000;
 }
