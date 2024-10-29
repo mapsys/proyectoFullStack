@@ -16,9 +16,7 @@
     justify-content: flex-start;
     align-items: center;
     img {
-      width: 50%;
-      height: auto;
-      border-radius: 20px;
+      @include img-styles(50%, auto, 20px);
       margin: 30px;
     }
     h1 {

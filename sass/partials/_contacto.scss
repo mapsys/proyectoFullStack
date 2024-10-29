@@ -85,9 +85,8 @@
   transition: transform 0.4s, top 0.4s;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
   img {
-    width: 100px;
+    @include img-styles(100px, auto, 50%);
     margin-top: -50px;
-    border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
   h2 {

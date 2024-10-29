@@ -1,2 +1,8 @@
 $mainColor: #efab77;
 $hoverMainColor: #d67c15;
+
+@mixin img-styles($ancho, $alto, $radio) {
+  width: $ancho;
+  height: $alto;
+  border-radius: $radio;
+}
