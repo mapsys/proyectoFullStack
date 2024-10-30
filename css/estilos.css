@@ -36,7 +36,8 @@ body {
 
 .barraMenu-item a:hover {
   color: #d67c15;
-  transform: translateY(-5px) scaleX(1.2); }
+  transform: translateY(-5px) scaleX(1.2);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); }
 
 .subMenuRecetas {
   background-color: #efab77;
