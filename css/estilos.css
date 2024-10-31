@@ -996,6 +996,23 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
-    grid-auto-flow: row; } }
+    grid-auto-flow: row; }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 20px; }
+    .footer-container .contact {
+      width: 100%;
+      text-align: center; }
+    .footer-container .social {
+      width: 100%; }
+    .footer-container .links {
+      width: 100%; }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center; }
+    .footer-bottom p {
+      font-size: 1.3rem; } }
 
 /*# sourceMappingURL=estilos.css.map */
