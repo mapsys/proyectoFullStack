@@ -605,30 +605,28 @@ body {
 
 /* Pagina Fotos */
 .fotosMainContent {
-  display: grid;
   margin: 20px auto;
   position: relative; }
-
-.carousel-indicators .fotosButton {
-  background-color: #f1ba7b; }
-
-.carousel-control-prev,
-.carousel-control-next {
-  width: 10%; }
-
-.carousel-caption h5 {
-  font-size: 1.5rem; }
-
-.fotosControl {
-  background-color: #eac23d;
-  width: 30px;
-  height: 30px; }
-
-.carousel-inner img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  object-fit: cover; }
+  .fotosMainContent .carousel .fotos-carrousel {
+    width: 40%;
+    margin: 10px auto 20px auto; }
+    .fotosMainContent .carousel .fotos-carrousel img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      object-fit: cover; }
+    .fotosMainContent .carousel .fotos-carrousel .carousel-control-prev,
+    .fotosMainContent .carousel .fotos-carrousel .carousel-control-next {
+      width: 10%; }
+    .fotosMainContent .carousel .fotos-carrousel .fotosControl {
+      background-color: #eac23d;
+      width: 30px;
+      height: 30px; }
+  .fotosMainContent .carousel .carrousel-indicadores {
+    width: 30%;
+    margin: auto; }
+    .fotosMainContent .carousel .carrousel-indicadores .fotosButton {
+      background-color: #f1ba7b; }
 
 /* Pagina Contacto */
 .contactMainContent {
