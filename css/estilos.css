@@ -1019,6 +1019,12 @@ body {
     flex-direction: column;
     text-align: center; }
     .footer-bottom p {
-      font-size: 1.3rem; } }
+      font-size: 1.3rem; }
+
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover; } }
 
 /*# sourceMappingURL=estilos.css.map */

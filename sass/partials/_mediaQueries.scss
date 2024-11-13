@@ -132,4 +132,11 @@
       font-size: 1.3rem;
     }
   }
+
+  .carousel-inner {
+    img {
+      @include img-styles(100%, auto, 5px);
+      object-fit: cover;
+    }}
+    
 }
