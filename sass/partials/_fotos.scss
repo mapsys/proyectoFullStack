@@ -29,7 +29,7 @@
 
 .carousel-inner {
   img {
-    @include img-styles(100%, 500px, 5px);
+    @include img-styles(100%, auto, 5px);
     object-fit: cover;
   }
 }

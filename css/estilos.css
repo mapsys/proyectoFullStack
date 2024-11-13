@@ -43,6 +43,10 @@ body {
   background-color: #efab77;
   white-space: nowrap;
   width: auto; }
+  .subMenuRecetas .barraMenu-sub-item:hover {
+    color: black;
+    transform: translateY(-5px);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); }
 
 .nav-link {
   font-size: 1.5rem; }
@@ -622,7 +626,7 @@ body {
 
 .carousel-inner img {
   width: 100%;
-  height: 500px;
+  height: auto;
   border-radius: 5px;
   object-fit: cover; }
 
@@ -891,6 +895,8 @@ body {
   background-color: #dbe1e5;
   border-radius: 10px;
   align-items: center; }
+  .container-recetas-form h2 {
+    margin-top: 30px; }
 
 .recetas-form {
   display: flex;

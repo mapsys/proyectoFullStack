@@ -37,6 +37,13 @@
   background-color: $mainColor;
   white-space: nowrap;
   width: auto;
+  .barraMenu-sub-item{
+    &:hover {
+      color: black;
+      transform: translateY(-5px) ;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+  }
 }
 .nav-link {
   font-size: 1.5rem;
