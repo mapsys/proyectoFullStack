@@ -607,25 +607,25 @@ body {
 .fotosMainContent {
   margin: 20px auto;
   position: relative; }
-  .fotosMainContent .carousel .fotos-carrousel {
+  .fotosMainContent .carrousel .fotos-carrousel {
     width: 40%;
     margin: 10px auto 20px auto; }
-    .fotosMainContent .carousel .fotos-carrousel img {
+    .fotosMainContent .carrousel .fotos-carrousel img {
       width: 100%;
       height: auto;
       border-radius: 5px;
       object-fit: cover; }
-    .fotosMainContent .carousel .fotos-carrousel .carousel-control-prev,
-    .fotosMainContent .carousel .fotos-carrousel .carousel-control-next {
+    .fotosMainContent .carrousel .fotos-carrousel .carousel-control-prev,
+    .fotosMainContent .carrousel .fotos-carrousel .carousel-control-next {
       width: 10%; }
-    .fotosMainContent .carousel .fotos-carrousel .fotosControl {
+    .fotosMainContent .carrousel .fotos-carrousel .fotosControl {
       background-color: #eac23d;
       width: 30px;
       height: 30px; }
-  .fotosMainContent .carousel .carrousel-indicadores {
+  .fotosMainContent .carrousel .carrousel-indicadores {
     width: 30%;
     margin: auto; }
-    .fotosMainContent .carousel .carrousel-indicadores .fotosButton {
+    .fotosMainContent .carrousel .carrousel-indicadores .fotosButton {
       background-color: #f1ba7b; }
 
 /* Pagina Contacto */
@@ -872,7 +872,8 @@ body {
       height: 16px; }
     .recetasIngredientes li span {
       margin-left: 30px;
-      display: block; }
+      display: block;
+      font-size: 2rem; }
 
 .recetasIngredientes1 h3,
 .recetasIngredientes2 h3,
@@ -915,7 +916,7 @@ body {
       background-color: #9adfa9; }
 
 /* Media queries */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   /* Main page */
   .gridTopMainSide {
     display: grid;
@@ -928,7 +929,8 @@ body {
   .top3-articles {
     display: flex;
     flex-direction: column;
-    width: 100%; }
+    width: 100%;
+    gap: 20px; }
 
   .top3-article {
     width: 100%; }
@@ -1024,5 +1026,101 @@ body {
     height: auto;
     border-radius: 5px;
     object-fit: cover; } }
+@media (min-width: 601px) and (max-width: 900px) {
+  .gridTopMainSide {
+    display: grid;
+    grid-template-areas: "top3" "main" "sidebar";
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 10px auto;
+    gap: 5px; }
+
+  .top3-articles {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px; }
+    .top3-articles .top3-article {
+      width: 100%; }
+
+  .gridTop3Page {
+    display: grid;
+    grid-template-areas: "header header header" "sidebar sidebar sidebar" "main main main";
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: 10px auto;
+    gap: 5px; }
+
+  .top3PageSidebar {
+    grid-area: sidebar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #f4e3cd;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    position: relative; }
+    .top3PageSidebar .top3PageTitle {
+      position: relative;
+      bottom: auto;
+      left: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      width: 50%;
+      text-align: center; }
+      .top3PageSidebar .top3PageTitle a {
+        text-decoration: none;
+        color: #f6ebeb;
+        font-size: 1.3rem; }
+    .top3PageSidebar .top3SidebarArticle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+      flex-direction: column; }
+      .top3PageSidebar .top3SidebarArticle img {
+        display: none;
+        width: 38%;
+        height: auto;
+        margin: 5px auto; }
+      .top3PageSidebar .top3SidebarArticle a {
+        text-decoration: none;
+        color: black; }
+
+  .sidebar {
+    display: none; }
+
+  .aboutGrid {
+    display: grid;
+    grid-template-areas: "main" "sidebar";
+    grid-template-columns: 1fr; }
+    .aboutGrid p {
+      font-size: 1.5rem; }
+
+  .fotosMainContent .carrousel .fotos-carrousel {
+    width: 70%;
+    margin: 10px auto 20px auto; }
+    .fotosMainContent .carrousel .fotos-carrousel img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      object-fit: cover; }
+
+  .gridWireframePage {
+    display: grid;
+    grid-template-areas: "header" "main" "sidebar";
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 10px auto;
+    gap: 5px; }
+
+  .ultimasIngredientes li span {
+    font-size: 1rem; } }
 
 /*# sourceMappingURL=estilos.css.map */

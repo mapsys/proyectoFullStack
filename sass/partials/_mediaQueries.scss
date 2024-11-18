@@ -1,7 +1,7 @@
 /* Media queries */
-
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   /* Main page */
+
   .gridTopMainSide {
     display: grid;
     grid-template-areas:
@@ -17,6 +17,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 20px;
   }
   .top3-article {
     width: 100%;
@@ -66,6 +67,8 @@
       font-size: 1.5rem;
     }
   }
+
+  // Pagina Ultimas recetas
   .ultimasArticle {
     display: grid;
     grid-template-areas:
@@ -111,6 +114,8 @@
     gap: 10px;
     grid-auto-flow: row;
   }
+
+  // Footer
   .footer-container {
     flex-direction: column;
     gap: 20px;
@@ -128,15 +133,151 @@
   .footer-bottom {
     flex-direction: column;
     text-align: center;
-    p{
+    p {
       font-size: 1.3rem;
     }
   }
 
+  // Carrousel de fotos
   .carousel-inner {
     img {
       @include img-styles(100%, auto, 5px);
       object-fit: cover;
-    }}
-    
+    }
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  // Pagina Home
+  .gridTopMainSide {
+    display: grid;
+    grid-template-areas:
+      "top3"
+      "main"
+      "sidebar";
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 10px auto;
+    gap: 5px;
+  }
+  .top3-articles {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    .top3-article {
+      width: 100%;
+    }
+  }
+
+  .gridTop3Page {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "sidebar sidebar sidebar"
+      "main main main";
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: 10px auto;
+    gap: 5px;
+  }
+  .top3PageSidebar {
+    grid-area: sidebar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(244, 227, 205);
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    position: relative;
+    .top3PageTitle {
+      position: relative;
+      bottom: auto;
+      left: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      width: 50%;
+      text-align: center;
+      a {
+        text-decoration: none;
+        color: #f6ebeb;
+        font-size: 1.3rem;
+      }
+    }
+    .top3SidebarArticle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+      flex-direction: column;
+      img {
+        display: none;
+        width: 38%;
+        height: auto;
+        margin: 5px auto;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+
+  // Sidebar no mostrada en tablets
+  .sidebar {
+    display: none;
+  }
+
+  .aboutGrid {
+    display: grid;
+    grid-template-areas:
+      "main"
+      "sidebar";
+    grid-template-columns: 1fr;
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  // Pagina fotos
+  .fotosMainContent {
+    .carrousel {
+      .fotos-carrousel {
+        width: 70%;
+        margin: 10px auto 20px auto;
+        img {
+          @include img-styles(100%, auto, 5px);
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  //Pagina Wireframe
+  .gridWireframePage {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main"
+      "sidebar";
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 10px auto;
+    gap: 5px;
+  }
+
+  //Pagina ultimas recetas
+  .ultimasIngredientes {
+  li{
+    span{
+      font-size: 1rem;
+    }
+  }
+  }
 }
