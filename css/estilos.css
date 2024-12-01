@@ -607,25 +607,25 @@ body {
 .fotosMainContent {
   margin: 20px auto;
   position: relative; }
-  .fotosMainContent .carrousel .fotos-carrousel {
+  .fotosMainContent .carousel .fotos-carrousel {
     width: 40%;
     margin: 10px auto 20px auto; }
-    .fotosMainContent .carrousel .fotos-carrousel img {
+    .fotosMainContent .carousel .fotos-carrousel img {
       width: 100%;
       height: auto;
       border-radius: 5px;
       object-fit: cover; }
-    .fotosMainContent .carrousel .fotos-carrousel .carousel-control-prev,
-    .fotosMainContent .carrousel .fotos-carrousel .carousel-control-next {
+    .fotosMainContent .carousel .fotos-carrousel .carousel-control-prev,
+    .fotosMainContent .carousel .fotos-carrousel .carousel-control-next {
       width: 10%; }
-    .fotosMainContent .carrousel .fotos-carrousel .fotosControl {
+    .fotosMainContent .carousel .fotos-carrousel .fotosControl {
       background-color: #eac23d;
       width: 30px;
       height: 30px; }
-  .fotosMainContent .carrousel .carrousel-indicadores {
+  .fotosMainContent .carousel .carrousel-indicadores {
     width: 30%;
     margin: auto; }
-    .fotosMainContent .carrousel .carrousel-indicadores .fotosButton {
+    .fotosMainContent .carousel .carrousel-indicadores .fotosButton {
       background-color: #f1ba7b; }
 
 /* Pagina Contacto */
